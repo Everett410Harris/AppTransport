@@ -49,9 +49,6 @@
             this.licensePlateTb = new System.Windows.Forms.TextBox();
             this.licensePlateLabel = new System.Windows.Forms.Label();
             this.manageVehicleLabel = new System.Windows.Forms.Label();
-            this.panel2 = new System.Windows.Forms.Panel();
-            this.driversLabel = new System.Windows.Forms.Label();
-            this.DriversPicBox = new System.Windows.Forms.PictureBox();
             this.customerLabel = new System.Windows.Forms.Label();
             this.customerPicBox = new System.Windows.Forms.PictureBox();
             this.vehicleLabel = new System.Windows.Forms.Label();
@@ -66,13 +63,13 @@
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.panel3 = new System.Windows.Forms.Panel();
             this.panel4 = new System.Windows.Forms.Panel();
-            this.addNewBtn = new System.Windows.Forms.Button();
-            this.displayBtn = new System.Windows.Forms.Button();
-            this.deleteBtn = new System.Windows.Forms.Button();
             this.resetBtn = new System.Windows.Forms.Button();
+            this.deleteBtn = new System.Windows.Forms.Button();
+            this.displayBtn = new System.Windows.Forms.Button();
+            this.addNewBtn = new System.Windows.Forms.Button();
+            this.label1 = new System.Windows.Forms.Label();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.panel1.SuspendLayout();
-            this.panel2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.DriversPicBox)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.customerPicBox)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.vehiclesPicBox)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.bookingPicBox)).BeginInit();
@@ -82,6 +79,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.panel3.SuspendLayout();
             this.panel4.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
@@ -298,36 +296,6 @@
             this.manageVehicleLabel.TabIndex = 0;
             this.manageVehicleLabel.Text = "Manage Vehicles";
             // 
-            // panel2
-            // 
-            this.panel2.BackColor = System.Drawing.Color.White;
-            this.panel2.Controls.Add(this.driversLabel);
-            this.panel2.Controls.Add(this.DriversPicBox);
-            this.panel2.Location = new System.Drawing.Point(49, 100);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(98, 101);
-            this.panel2.TabIndex = 1;
-            // 
-            // driversLabel
-            // 
-            this.driversLabel.AutoSize = true;
-            this.driversLabel.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.driversLabel.Location = new System.Drawing.Point(11, 66);
-            this.driversLabel.Name = "driversLabel";
-            this.driversLabel.Size = new System.Drawing.Size(81, 30);
-            this.driversLabel.TabIndex = 1;
-            this.driversLabel.Text = "Drivers";
-            // 
-            // DriversPicBox
-            // 
-            this.DriversPicBox.Image = ((System.Drawing.Image)(resources.GetObject("DriversPicBox.Image")));
-            this.DriversPicBox.Location = new System.Drawing.Point(18, 3);
-            this.DriversPicBox.Name = "DriversPicBox";
-            this.DriversPicBox.Size = new System.Drawing.Size(61, 62);
-            this.DriversPicBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.DriversPicBox.TabIndex = 0;
-            this.DriversPicBox.TabStop = false;
-            // 
             // customerLabel
             // 
             this.customerLabel.AutoSize = true;
@@ -469,29 +437,17 @@
             this.panel4.Size = new System.Drawing.Size(861, 81);
             this.panel4.TabIndex = 0;
             // 
-            // addNewBtn
+            // resetBtn
             // 
-            this.addNewBtn.BackColor = System.Drawing.Color.GreenYellow;
-            this.addNewBtn.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.addNewBtn.ForeColor = System.Drawing.Color.DodgerBlue;
-            this.addNewBtn.Location = new System.Drawing.Point(19, 14);
-            this.addNewBtn.Name = "addNewBtn";
-            this.addNewBtn.Size = new System.Drawing.Size(178, 52);
-            this.addNewBtn.TabIndex = 0;
-            this.addNewBtn.Text = "Add New";
-            this.addNewBtn.UseVisualStyleBackColor = false;
-            // 
-            // displayBtn
-            // 
-            this.displayBtn.BackColor = System.Drawing.Color.GreenYellow;
-            this.displayBtn.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.displayBtn.ForeColor = System.Drawing.Color.DodgerBlue;
-            this.displayBtn.Location = new System.Drawing.Point(226, 14);
-            this.displayBtn.Name = "displayBtn";
-            this.displayBtn.Size = new System.Drawing.Size(178, 52);
-            this.displayBtn.TabIndex = 1;
-            this.displayBtn.Text = "Display";
-            this.displayBtn.UseVisualStyleBackColor = false;
+            this.resetBtn.BackColor = System.Drawing.Color.GreenYellow;
+            this.resetBtn.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.resetBtn.ForeColor = System.Drawing.Color.DodgerBlue;
+            this.resetBtn.Location = new System.Drawing.Point(660, 14);
+            this.resetBtn.Name = "resetBtn";
+            this.resetBtn.Size = new System.Drawing.Size(178, 52);
+            this.resetBtn.TabIndex = 4;
+            this.resetBtn.Text = "Reset";
+            this.resetBtn.UseVisualStyleBackColor = false;
             // 
             // deleteBtn
             // 
@@ -505,24 +461,58 @@
             this.deleteBtn.Text = "Delete";
             this.deleteBtn.UseVisualStyleBackColor = false;
             // 
-            // resetBtn
+            // displayBtn
             // 
-            this.resetBtn.BackColor = System.Drawing.Color.GreenYellow;
-            this.resetBtn.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.resetBtn.ForeColor = System.Drawing.Color.DodgerBlue;
-            this.resetBtn.Location = new System.Drawing.Point(660, 14);
-            this.resetBtn.Name = "resetBtn";
-            this.resetBtn.Size = new System.Drawing.Size(178, 52);
-            this.resetBtn.TabIndex = 4;
-            this.resetBtn.Text = "Reset";
-            this.resetBtn.UseVisualStyleBackColor = false;
+            this.displayBtn.BackColor = System.Drawing.Color.GreenYellow;
+            this.displayBtn.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.displayBtn.ForeColor = System.Drawing.Color.DodgerBlue;
+            this.displayBtn.Location = new System.Drawing.Point(226, 14);
+            this.displayBtn.Name = "displayBtn";
+            this.displayBtn.Size = new System.Drawing.Size(178, 52);
+            this.displayBtn.TabIndex = 1;
+            this.displayBtn.Text = "Display";
+            this.displayBtn.UseVisualStyleBackColor = false;
+            // 
+            // addNewBtn
+            // 
+            this.addNewBtn.BackColor = System.Drawing.Color.GreenYellow;
+            this.addNewBtn.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.addNewBtn.ForeColor = System.Drawing.Color.DodgerBlue;
+            this.addNewBtn.Location = new System.Drawing.Point(19, 14);
+            this.addNewBtn.Name = "addNewBtn";
+            this.addNewBtn.Size = new System.Drawing.Size(178, 52);
+            this.addNewBtn.TabIndex = 0;
+            this.addNewBtn.Text = "Add New";
+            this.addNewBtn.UseVisualStyleBackColor = false;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.label1.Location = new System.Drawing.Point(60, 178);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(81, 30);
+            this.label1.TabIndex = 3;
+            this.label1.Text = "Drivers";
+            // 
+            // pictureBox2
+            // 
+            this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
+            this.pictureBox2.Location = new System.Drawing.Point(67, 113);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(61, 62);
+            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox2.TabIndex = 2;
+            this.pictureBox2.TabStop = false;
             // 
             // Vehicle
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1393, 843);
+            this.Controls.Add(this.label1);
             this.Controls.Add(this.panel3);
+            this.Controls.Add(this.pictureBox2);
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.exitLabel);
@@ -534,7 +524,6 @@
             this.Controls.Add(this.vehicleLabel);
             this.Controls.Add(this.vehiclesPicBox);
             this.Controls.Add(this.customerLabel);
-            this.Controls.Add(this.panel2);
             this.Controls.Add(this.customerPicBox);
             this.Controls.Add(this.panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
@@ -543,9 +532,6 @@
             this.Text = "Vehicles";
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
-            this.panel2.ResumeLayout(false);
-            this.panel2.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.DriversPicBox)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.customerPicBox)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.vehiclesPicBox)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.bookingPicBox)).EndInit();
@@ -555,6 +541,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.panel3.ResumeLayout(false);
             this.panel4.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -582,9 +569,6 @@
         private TextBox licensePlateTb;
         private Label licensePlateLabel;
         private Label manageVehicleLabel;
-        private Panel panel2;
-        private Label driversLabel;
-        private PictureBox DriversPicBox;
         private Label customerLabel;
         private PictureBox customerPicBox;
         private Label vehicleLabel;
@@ -603,5 +587,7 @@
         private Button deleteBtn;
         private Button displayBtn;
         private Button addNewBtn;
+        private Label label1;
+        private PictureBox pictureBox2;
     }
 }
