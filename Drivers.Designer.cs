@@ -43,6 +43,7 @@
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.label1 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.driverDOBdateTimePicker1 = new System.Windows.Forms.DateTimePicker();
             this.driversDOBLabel = new System.Windows.Forms.Label();
             this.makeLabel = new System.Windows.Forms.Label();
             this.bookedLabel = new System.Windows.Forms.Label();
@@ -61,7 +62,13 @@
             this.driversNameTb = new System.Windows.Forms.TextBox();
             this.licensePlateLabel = new System.Windows.Forms.Label();
             this.manageDriversLabel = new System.Windows.Forms.Label();
-            this.driverDOBdateTimePicker1 = new System.Windows.Forms.DateTimePicker();
+            this.panel3 = new System.Windows.Forms.Panel();
+            this.panel4 = new System.Windows.Forms.Panel();
+            this.resetBtn = new System.Windows.Forms.Button();
+            this.deleteBtn = new System.Windows.Forms.Button();
+            this.displayBtn = new System.Windows.Forms.Button();
+            this.addNewBtn = new System.Windows.Forms.Button();
+            this.dataGridView1 = new System.Windows.Forms.DataGridView();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.exitPicBox)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dashboardPicBox)).BeginInit();
@@ -70,6 +77,9 @@
             ((System.ComponentModel.ISupportInitialize)(this.customerPicBox)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             this.panel1.SuspendLayout();
+            this.panel3.SuspendLayout();
+            this.panel4.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
             // pictureBox1
@@ -230,6 +240,15 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(1115, 233);
             this.panel1.TabIndex = 25;
+            // 
+            // driverDOBdateTimePicker1
+            // 
+            this.driverDOBdateTimePicker1.CalendarFont = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.driverDOBdateTimePicker1.Format = System.Windows.Forms.DateTimePickerFormat.Short;
+            this.driverDOBdateTimePicker1.Location = new System.Drawing.Point(175, 191);
+            this.driverDOBdateTimePicker1.Name = "driverDOBdateTimePicker1";
+            this.driverDOBdateTimePicker1.Size = new System.Drawing.Size(175, 23);
+            this.driverDOBdateTimePicker1.TabIndex = 19;
             // 
             // driversDOBLabel
             // 
@@ -409,20 +428,91 @@
             this.manageDriversLabel.TabIndex = 0;
             this.manageDriversLabel.Text = "Manage Drivers";
             // 
-            // driverDOBdateTimePicker1
+            // panel3
             // 
-            this.driverDOBdateTimePicker1.CalendarFont = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.driverDOBdateTimePicker1.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.driverDOBdateTimePicker1.Location = new System.Drawing.Point(175, 191);
-            this.driverDOBdateTimePicker1.Name = "driverDOBdateTimePicker1";
-            this.driverDOBdateTimePicker1.Size = new System.Drawing.Size(175, 23);
-            this.driverDOBdateTimePicker1.TabIndex = 19;
+            this.panel3.BackColor = System.Drawing.Color.White;
+            this.panel3.Controls.Add(this.panel4);
+            this.panel3.Location = new System.Drawing.Point(250, 251);
+            this.panel3.Name = "panel3";
+            this.panel3.Size = new System.Drawing.Size(897, 115);
+            this.panel3.TabIndex = 26;
+            // 
+            // panel4
+            // 
+            this.panel4.BackColor = System.Drawing.Color.PeachPuff;
+            this.panel4.Controls.Add(this.resetBtn);
+            this.panel4.Controls.Add(this.deleteBtn);
+            this.panel4.Controls.Add(this.displayBtn);
+            this.panel4.Controls.Add(this.addNewBtn);
+            this.panel4.Location = new System.Drawing.Point(17, 15);
+            this.panel4.Name = "panel4";
+            this.panel4.Size = new System.Drawing.Size(861, 81);
+            this.panel4.TabIndex = 0;
+            // 
+            // resetBtn
+            // 
+            this.resetBtn.BackColor = System.Drawing.Color.GreenYellow;
+            this.resetBtn.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.resetBtn.ForeColor = System.Drawing.Color.DodgerBlue;
+            this.resetBtn.Location = new System.Drawing.Point(660, 14);
+            this.resetBtn.Name = "resetBtn";
+            this.resetBtn.Size = new System.Drawing.Size(178, 52);
+            this.resetBtn.TabIndex = 4;
+            this.resetBtn.Text = "Reset";
+            this.resetBtn.UseVisualStyleBackColor = false;
+            // 
+            // deleteBtn
+            // 
+            this.deleteBtn.BackColor = System.Drawing.Color.GreenYellow;
+            this.deleteBtn.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.deleteBtn.ForeColor = System.Drawing.Color.DodgerBlue;
+            this.deleteBtn.Location = new System.Drawing.Point(442, 14);
+            this.deleteBtn.Name = "deleteBtn";
+            this.deleteBtn.Size = new System.Drawing.Size(178, 52);
+            this.deleteBtn.TabIndex = 2;
+            this.deleteBtn.Text = "Delete";
+            this.deleteBtn.UseVisualStyleBackColor = false;
+            // 
+            // displayBtn
+            // 
+            this.displayBtn.BackColor = System.Drawing.Color.GreenYellow;
+            this.displayBtn.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.displayBtn.ForeColor = System.Drawing.Color.DodgerBlue;
+            this.displayBtn.Location = new System.Drawing.Point(226, 14);
+            this.displayBtn.Name = "displayBtn";
+            this.displayBtn.Size = new System.Drawing.Size(178, 52);
+            this.displayBtn.TabIndex = 1;
+            this.displayBtn.Text = "Display";
+            this.displayBtn.UseVisualStyleBackColor = false;
+            // 
+            // addNewBtn
+            // 
+            this.addNewBtn.BackColor = System.Drawing.Color.GreenYellow;
+            this.addNewBtn.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.addNewBtn.ForeColor = System.Drawing.Color.DodgerBlue;
+            this.addNewBtn.Location = new System.Drawing.Point(19, 14);
+            this.addNewBtn.Name = "addNewBtn";
+            this.addNewBtn.Size = new System.Drawing.Size(178, 52);
+            this.addNewBtn.TabIndex = 0;
+            this.addNewBtn.Text = "Add New";
+            this.addNewBtn.UseVisualStyleBackColor = false;
+            // 
+            // dataGridView1
+            // 
+            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView1.Location = new System.Drawing.Point(182, 372);
+            this.dataGridView1.Name = "dataGridView1";
+            this.dataGridView1.RowTemplate.Height = 25;
+            this.dataGridView1.Size = new System.Drawing.Size(1115, 459);
+            this.dataGridView1.TabIndex = 27;
             // 
             // Drivers
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1393, 843);
+            this.Controls.Add(this.dataGridView1);
+            this.Controls.Add(this.panel3);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.pictureBox3);
             this.Controls.Add(this.label1);
@@ -449,6 +539,9 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
+            this.panel3.ResumeLayout(false);
+            this.panel4.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -489,5 +582,12 @@
         private TextBox driversNameTb;
         private Label licensePlateLabel;
         private Label manageDriversLabel;
+        private Panel panel3;
+        private Panel panel4;
+        private Button resetBtn;
+        private Button deleteBtn;
+        private Button displayBtn;
+        private Button addNewBtn;
+        private DataGridView dataGridView1;
     }
 }
