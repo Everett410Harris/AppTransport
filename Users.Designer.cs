@@ -30,6 +30,8 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Users));
             this.panel1 = new System.Windows.Forms.Panel();
+            this.joinDatedateTimePicker1 = new System.Windows.Forms.DateTimePicker();
+            this.userDOBdateTimePicker1 = new System.Windows.Forms.DateTimePicker();
             this.userPhoneLabel = new System.Windows.Forms.Label();
             this.genderLabel = new System.Windows.Forms.Label();
             this.genderCb = new System.Windows.Forms.ComboBox();
@@ -41,8 +43,6 @@
             this.userNameTb = new System.Windows.Forms.TextBox();
             this.userNameLabel = new System.Windows.Forms.Label();
             this.usersLabel = new System.Windows.Forms.Label();
-            this.userDOBdateTimePicker1 = new System.Windows.Forms.DateTimePicker();
-            this.joinDatedateTimePicker1 = new System.Windows.Forms.DateTimePicker();
             this.label1 = new System.Windows.Forms.Label();
             this.userPicBox = new System.Windows.Forms.PictureBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
@@ -78,6 +78,22 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(1056, 233);
             this.panel1.TabIndex = 1;
+            // 
+            // joinDatedateTimePicker1
+            // 
+            this.joinDatedateTimePicker1.Format = System.Windows.Forms.DateTimePickerFormat.Short;
+            this.joinDatedateTimePicker1.Location = new System.Drawing.Point(744, 196);
+            this.joinDatedateTimePicker1.Name = "joinDatedateTimePicker1";
+            this.joinDatedateTimePicker1.Size = new System.Drawing.Size(225, 23);
+            this.joinDatedateTimePicker1.TabIndex = 20;
+            // 
+            // userDOBdateTimePicker1
+            // 
+            this.userDOBdateTimePicker1.Format = System.Windows.Forms.DateTimePickerFormat.Short;
+            this.userDOBdateTimePicker1.Location = new System.Drawing.Point(744, 79);
+            this.userDOBdateTimePicker1.Name = "userDOBdateTimePicker1";
+            this.userDOBdateTimePicker1.Size = new System.Drawing.Size(225, 23);
+            this.userDOBdateTimePicker1.TabIndex = 19;
             // 
             // userPhoneLabel
             // 
@@ -194,22 +210,6 @@
             this.usersLabel.TabIndex = 0;
             this.usersLabel.Text = "Users";
             // 
-            // userDOBdateTimePicker1
-            // 
-            this.userDOBdateTimePicker1.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.userDOBdateTimePicker1.Location = new System.Drawing.Point(744, 79);
-            this.userDOBdateTimePicker1.Name = "userDOBdateTimePicker1";
-            this.userDOBdateTimePicker1.Size = new System.Drawing.Size(225, 23);
-            this.userDOBdateTimePicker1.TabIndex = 19;
-            // 
-            // joinDatedateTimePicker1
-            // 
-            this.joinDatedateTimePicker1.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.joinDatedateTimePicker1.Location = new System.Drawing.Point(744, 196);
-            this.joinDatedateTimePicker1.Name = "joinDatedateTimePicker1";
-            this.joinDatedateTimePicker1.Size = new System.Drawing.Size(225, 23);
-            this.joinDatedateTimePicker1.TabIndex = 20;
-            // 
             // label1
             // 
             this.label1.AutoSize = true;
@@ -285,7 +285,7 @@
             this.button1.BackColor = System.Drawing.Color.Chartreuse;
             this.button1.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.button1.ForeColor = System.Drawing.Color.Salmon;
-            this.button1.Location = new System.Drawing.Point(654, 337);
+            this.button1.Location = new System.Drawing.Point(666, 278);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(140, 43);
             this.button1.TabIndex = 26;

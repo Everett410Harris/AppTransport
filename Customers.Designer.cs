@@ -1,6 +1,6 @@
 ﻿namespace AppTransport
 {
-    partial class Bookings
+    partial class Customers
     {
         /// <summary>
         /// Required designer variable.
@@ -28,8 +28,15 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Bookings));
-            this.driversLabel = new System.Windows.Forms.Label();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Customers));
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.userPhoneLabel = new System.Windows.Forms.Label();
+            this.customerAddressLabel = new System.Windows.Forms.Label();
+            this.customerPhoneTb = new System.Windows.Forms.TextBox();
+            this.customerNameTb = new System.Windows.Forms.TextBox();
+            this.customerNameLabel = new System.Windows.Forms.Label();
+            this.manageCustomersLabel = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.exitLabel = new System.Windows.Forms.Label();
@@ -42,20 +49,7 @@
             this.vehiclesPicBox = new System.Windows.Forms.PictureBox();
             this.customerLabel = new System.Windows.Forms.Label();
             this.customerPicBox = new System.Windows.Forms.PictureBox();
-            this.panel1 = new System.Windows.Forms.Panel();
-            this.customerCb = new System.Windows.Forms.ComboBox();
-            this.VehicleCb = new System.Windows.Forms.ComboBox();
-            this.retutnDateTimePicker1 = new System.Windows.Forms.DateTimePicker();
-            this.pickupDateTimePicker1 = new System.Windows.Forms.DateTimePicker();
-            this.userPhoneLabel = new System.Windows.Forms.Label();
-            this.driverLabel = new System.Windows.Forms.Label();
-            this.driverCb = new System.Windows.Forms.ComboBox();
-            this.returnDateLabel = new System.Windows.Forms.Label();
-            this.userPhoneTb = new System.Windows.Forms.TextBox();
-            this.pickupDateLabel = new System.Windows.Forms.Label();
-            this.vehiclesLabel = new System.Windows.Forms.Label();
-            this.customersLabel = new System.Windows.Forms.Label();
-            this.bookingLabel = new System.Windows.Forms.Label();
+            this.customerAddressTb = new System.Windows.Forms.TextBox();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.panel3 = new System.Windows.Forms.Panel();
             this.panel4 = new System.Windows.Forms.Panel();
@@ -63,6 +57,7 @@
             this.deleteBtn = new System.Windows.Forms.Button();
             this.displayBtn = new System.Windows.Forms.Button();
             this.addNewBtn = new System.Windows.Forms.Button();
+            this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.exitPicBox)).BeginInit();
@@ -70,26 +65,100 @@
             ((System.ComponentModel.ISupportInitialize)(this.bookingPicBox)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.vehiclesPicBox)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.customerPicBox)).BeginInit();
-            this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.panel3.SuspendLayout();
             this.panel4.SuspendLayout();
             this.SuspendLayout();
             // 
-            // driversLabel
+            // panel1
             // 
-            this.driversLabel.AutoSize = true;
-            this.driversLabel.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.driversLabel.Location = new System.Drawing.Point(49, 168);
-            this.driversLabel.Name = "driversLabel";
-            this.driversLabel.Size = new System.Drawing.Size(81, 30);
-            this.driversLabel.TabIndex = 15;
-            this.driversLabel.Text = "Drivers";
+            this.panel1.BackColor = System.Drawing.Color.PeachPuff;
+            this.panel1.Controls.Add(this.customerAddressTb);
+            this.panel1.Controls.Add(this.userPhoneLabel);
+            this.panel1.Controls.Add(this.customerAddressLabel);
+            this.panel1.Controls.Add(this.customerPhoneTb);
+            this.panel1.Controls.Add(this.customerNameTb);
+            this.panel1.Controls.Add(this.customerNameLabel);
+            this.panel1.Controls.Add(this.manageCustomersLabel);
+            this.panel1.Location = new System.Drawing.Point(230, 12);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(1056, 233);
+            this.panel1.TabIndex = 2;
+            // 
+            // userPhoneLabel
+            // 
+            this.userPhoneLabel.AutoSize = true;
+            this.userPhoneLabel.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.userPhoneLabel.ForeColor = System.Drawing.Color.DodgerBlue;
+            this.userPhoneLabel.Location = new System.Drawing.Point(42, 188);
+            this.userPhoneLabel.Name = "userPhoneLabel";
+            this.userPhoneLabel.Size = new System.Drawing.Size(176, 30);
+            this.userPhoneLabel.TabIndex = 18;
+            this.userPhoneLabel.Text = "Customer Phone";
+            // 
+            // customerAddressLabel
+            // 
+            this.customerAddressLabel.AutoSize = true;
+            this.customerAddressLabel.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.customerAddressLabel.ForeColor = System.Drawing.Color.DodgerBlue;
+            this.customerAddressLabel.Location = new System.Drawing.Point(538, 77);
+            this.customerAddressLabel.Name = "customerAddressLabel";
+            this.customerAddressLabel.Size = new System.Drawing.Size(191, 30);
+            this.customerAddressLabel.TabIndex = 17;
+            this.customerAddressLabel.Text = "Customer Address";
+            // 
+            // customerPhoneTb
+            // 
+            this.customerPhoneTb.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.customerPhoneTb.Location = new System.Drawing.Point(263, 184);
+            this.customerPhoneTb.Name = "customerPhoneTb";
+            this.customerPhoneTb.Size = new System.Drawing.Size(225, 35);
+            this.customerPhoneTb.TabIndex = 6;
+            // 
+            // customerNameTb
+            // 
+            this.customerNameTb.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.customerNameTb.Location = new System.Drawing.Point(263, 74);
+            this.customerNameTb.Name = "customerNameTb";
+            this.customerNameTb.Size = new System.Drawing.Size(225, 35);
+            this.customerNameTb.TabIndex = 2;
+            // 
+            // customerNameLabel
+            // 
+            this.customerNameLabel.AutoSize = true;
+            this.customerNameLabel.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.customerNameLabel.ForeColor = System.Drawing.Color.DodgerBlue;
+            this.customerNameLabel.Location = new System.Drawing.Point(42, 77);
+            this.customerNameLabel.Name = "customerNameLabel";
+            this.customerNameLabel.Size = new System.Drawing.Size(171, 30);
+            this.customerNameLabel.TabIndex = 1;
+            this.customerNameLabel.Text = "Customer Name";
+            // 
+            // manageCustomersLabel
+            // 
+            this.manageCustomersLabel.AutoSize = true;
+            this.manageCustomersLabel.Font = new System.Drawing.Font("Segoe UI", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.manageCustomersLabel.ForeColor = System.Drawing.Color.DodgerBlue;
+            this.manageCustomersLabel.Location = new System.Drawing.Point(360, 12);
+            this.manageCustomersLabel.Name = "manageCustomersLabel";
+            this.manageCustomersLabel.Size = new System.Drawing.Size(283, 40);
+            this.manageCustomersLabel.TabIndex = 0;
+            this.manageCustomersLabel.Text = "Manage Customers";
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.label1.Location = new System.Drawing.Point(49, 169);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(81, 30);
+            this.label1.TabIndex = 15;
+            this.label1.Text = "Drivers";
             // 
             // pictureBox2
             // 
             this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
-            this.pictureBox2.Location = new System.Drawing.Point(56, 103);
+            this.pictureBox2.Location = new System.Drawing.Point(56, 104);
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.Size = new System.Drawing.Size(61, 62);
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -99,7 +168,7 @@
             // pictureBox1
             // 
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(1, 2);
+            this.pictureBox1.Location = new System.Drawing.Point(1, 3);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(51, 49);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -110,7 +179,7 @@
             // 
             this.exitLabel.AutoSize = true;
             this.exitLabel.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.exitLabel.Location = new System.Drawing.Point(86, 801);
+            this.exitLabel.Location = new System.Drawing.Point(86, 802);
             this.exitLabel.Name = "exitLabel";
             this.exitLabel.Size = new System.Drawing.Size(50, 30);
             this.exitLabel.TabIndex = 24;
@@ -119,7 +188,7 @@
             // exitPicBox
             // 
             this.exitPicBox.Image = ((System.Drawing.Image)(resources.GetObject("exitPicBox.Image")));
-            this.exitPicBox.Location = new System.Drawing.Point(75, 736);
+            this.exitPicBox.Location = new System.Drawing.Point(75, 737);
             this.exitPicBox.Name = "exitPicBox";
             this.exitPicBox.Size = new System.Drawing.Size(61, 62);
             this.exitPicBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -130,7 +199,7 @@
             // 
             this.dashboardLabel.AutoSize = true;
             this.dashboardLabel.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.dashboardLabel.Location = new System.Drawing.Point(38, 669);
+            this.dashboardLabel.Location = new System.Drawing.Point(38, 670);
             this.dashboardLabel.Name = "dashboardLabel";
             this.dashboardLabel.Size = new System.Drawing.Size(119, 30);
             this.dashboardLabel.TabIndex = 22;
@@ -139,7 +208,7 @@
             // dashboardPicBox
             // 
             this.dashboardPicBox.Image = ((System.Drawing.Image)(resources.GetObject("dashboardPicBox.Image")));
-            this.dashboardPicBox.Location = new System.Drawing.Point(56, 604);
+            this.dashboardPicBox.Location = new System.Drawing.Point(56, 605);
             this.dashboardPicBox.Name = "dashboardPicBox";
             this.dashboardPicBox.Size = new System.Drawing.Size(61, 62);
             this.dashboardPicBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -150,8 +219,7 @@
             // 
             this.bookingsLabel.AutoSize = true;
             this.bookingsLabel.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.bookingsLabel.ForeColor = System.Drawing.Color.DodgerBlue;
-            this.bookingsLabel.Location = new System.Drawing.Point(38, 545);
+            this.bookingsLabel.Location = new System.Drawing.Point(38, 546);
             this.bookingsLabel.Name = "bookingsLabel";
             this.bookingsLabel.Size = new System.Drawing.Size(105, 30);
             this.bookingsLabel.TabIndex = 20;
@@ -160,7 +228,7 @@
             // bookingPicBox
             // 
             this.bookingPicBox.Image = ((System.Drawing.Image)(resources.GetObject("bookingPicBox.Image")));
-            this.bookingPicBox.Location = new System.Drawing.Point(56, 480);
+            this.bookingPicBox.Location = new System.Drawing.Point(56, 481);
             this.bookingPicBox.Name = "bookingPicBox";
             this.bookingPicBox.Size = new System.Drawing.Size(61, 62);
             this.bookingPicBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -172,7 +240,7 @@
             this.vehicleLabel.AutoSize = true;
             this.vehicleLabel.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.vehicleLabel.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.vehicleLabel.Location = new System.Drawing.Point(38, 417);
+            this.vehicleLabel.Location = new System.Drawing.Point(38, 418);
             this.vehicleLabel.Name = "vehicleLabel";
             this.vehicleLabel.Size = new System.Drawing.Size(92, 30);
             this.vehicleLabel.TabIndex = 18;
@@ -181,7 +249,7 @@
             // vehiclesPicBox
             // 
             this.vehiclesPicBox.Image = ((System.Drawing.Image)(resources.GetObject("vehiclesPicBox.Image")));
-            this.vehiclesPicBox.Location = new System.Drawing.Point(56, 352);
+            this.vehiclesPicBox.Location = new System.Drawing.Point(56, 353);
             this.vehiclesPicBox.Name = "vehiclesPicBox";
             this.vehiclesPicBox.Size = new System.Drawing.Size(61, 62);
             this.vehiclesPicBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -192,7 +260,8 @@
             // 
             this.customerLabel.AutoSize = true;
             this.customerLabel.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.customerLabel.Location = new System.Drawing.Point(38, 293);
+            this.customerLabel.ForeColor = System.Drawing.Color.DodgerBlue;
+            this.customerLabel.Location = new System.Drawing.Point(38, 294);
             this.customerLabel.Name = "customerLabel";
             this.customerLabel.Size = new System.Drawing.Size(116, 30);
             this.customerLabel.TabIndex = 16;
@@ -201,184 +270,38 @@
             // customerPicBox
             // 
             this.customerPicBox.Image = ((System.Drawing.Image)(resources.GetObject("customerPicBox.Image")));
-            this.customerPicBox.Location = new System.Drawing.Point(56, 228);
+            this.customerPicBox.Location = new System.Drawing.Point(56, 229);
             this.customerPicBox.Name = "customerPicBox";
             this.customerPicBox.Size = new System.Drawing.Size(61, 62);
             this.customerPicBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.customerPicBox.TabIndex = 14;
             this.customerPicBox.TabStop = false;
             // 
-            // panel1
+            // customerAddressTb
             // 
-            this.panel1.BackColor = System.Drawing.Color.PeachPuff;
-            this.panel1.Controls.Add(this.customerCb);
-            this.panel1.Controls.Add(this.VehicleCb);
-            this.panel1.Controls.Add(this.retutnDateTimePicker1);
-            this.panel1.Controls.Add(this.pickupDateTimePicker1);
-            this.panel1.Controls.Add(this.userPhoneLabel);
-            this.panel1.Controls.Add(this.driverLabel);
-            this.panel1.Controls.Add(this.driverCb);
-            this.panel1.Controls.Add(this.returnDateLabel);
-            this.panel1.Controls.Add(this.userPhoneTb);
-            this.panel1.Controls.Add(this.pickupDateLabel);
-            this.panel1.Controls.Add(this.vehiclesLabel);
-            this.panel1.Controls.Add(this.customersLabel);
-            this.panel1.Controls.Add(this.bookingLabel);
-            this.panel1.Location = new System.Drawing.Point(182, 12);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1056, 233);
-            this.panel1.TabIndex = 26;
-            // 
-            // customerCb
-            // 
-            this.customerCb.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.customerCb.FormattingEnabled = true;
-            this.customerCb.Location = new System.Drawing.Point(263, 76);
-            this.customerCb.Name = "customerCb";
-            this.customerCb.Size = new System.Drawing.Size(225, 38);
-            this.customerCb.TabIndex = 22;
-            // 
-            // VehicleCb
-            // 
-            this.VehicleCb.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.VehicleCb.FormattingEnabled = true;
-            this.VehicleCb.Location = new System.Drawing.Point(263, 132);
-            this.VehicleCb.Name = "VehicleCb";
-            this.VehicleCb.Size = new System.Drawing.Size(225, 38);
-            this.VehicleCb.TabIndex = 21;
-            // 
-            // retutnDateTimePicker1
-            // 
-            this.retutnDateTimePicker1.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.retutnDateTimePicker1.Location = new System.Drawing.Point(744, 196);
-            this.retutnDateTimePicker1.Name = "retutnDateTimePicker1";
-            this.retutnDateTimePicker1.Size = new System.Drawing.Size(225, 23);
-            this.retutnDateTimePicker1.TabIndex = 20;
-            // 
-            // pickupDateTimePicker1
-            // 
-            this.pickupDateTimePicker1.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.pickupDateTimePicker1.Location = new System.Drawing.Point(744, 79);
-            this.pickupDateTimePicker1.Name = "pickupDateTimePicker1";
-            this.pickupDateTimePicker1.Size = new System.Drawing.Size(225, 23);
-            this.pickupDateTimePicker1.TabIndex = 19;
-            // 
-            // userPhoneLabel
-            // 
-            this.userPhoneLabel.AutoSize = true;
-            this.userPhoneLabel.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.userPhoneLabel.ForeColor = System.Drawing.Color.DodgerBlue;
-            this.userPhoneLabel.Location = new System.Drawing.Point(108, 189);
-            this.userPhoneLabel.Name = "userPhoneLabel";
-            this.userPhoneLabel.Size = new System.Drawing.Size(125, 30);
-            this.userPhoneLabel.TabIndex = 18;
-            this.userPhoneLabel.Text = "User Phone";
-            // 
-            // driverLabel
-            // 
-            this.driverLabel.AutoSize = true;
-            this.driverLabel.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.driverLabel.ForeColor = System.Drawing.Color.DodgerBlue;
-            this.driverLabel.Location = new System.Drawing.Point(608, 135);
-            this.driverLabel.Name = "driverLabel";
-            this.driverLabel.Size = new System.Drawing.Size(72, 30);
-            this.driverLabel.TabIndex = 17;
-            this.driverLabel.Text = "Driver";
-            // 
-            // driverCb
-            // 
-            this.driverCb.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.driverCb.FormattingEnabled = true;
-            this.driverCb.Items.AddRange(new object[] {
-            "",
-            "Female",
-            "Male",
-            "Other"});
-            this.driverCb.Location = new System.Drawing.Point(744, 127);
-            this.driverCb.Name = "driverCb";
-            this.driverCb.Size = new System.Drawing.Size(225, 38);
-            this.driverCb.TabIndex = 10;
-            // 
-            // returnDateLabel
-            // 
-            this.returnDateLabel.AutoSize = true;
-            this.returnDateLabel.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.returnDateLabel.ForeColor = System.Drawing.Color.DodgerBlue;
-            this.returnDateLabel.Location = new System.Drawing.Point(609, 188);
-            this.returnDateLabel.Name = "returnDateLabel";
-            this.returnDateLabel.Size = new System.Drawing.Size(130, 30);
-            this.returnDateLabel.TabIndex = 7;
-            this.returnDateLabel.Text = "Return Date";
-            // 
-            // userPhoneTb
-            // 
-            this.userPhoneTb.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.userPhoneTb.Location = new System.Drawing.Point(263, 184);
-            this.userPhoneTb.Name = "userPhoneTb";
-            this.userPhoneTb.Size = new System.Drawing.Size(225, 35);
-            this.userPhoneTb.TabIndex = 6;
-            // 
-            // pickupDateLabel
-            // 
-            this.pickupDateLabel.AutoSize = true;
-            this.pickupDateLabel.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.pickupDateLabel.ForeColor = System.Drawing.Color.DodgerBlue;
-            this.pickupDateLabel.Location = new System.Drawing.Point(609, 75);
-            this.pickupDateLabel.Name = "pickupDateLabel";
-            this.pickupDateLabel.Size = new System.Drawing.Size(131, 30);
-            this.pickupDateLabel.TabIndex = 5;
-            this.pickupDateLabel.Text = "Pickup Date";
-            // 
-            // vehiclesLabel
-            // 
-            this.vehiclesLabel.AutoSize = true;
-            this.vehiclesLabel.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.vehiclesLabel.ForeColor = System.Drawing.Color.DodgerBlue;
-            this.vehiclesLabel.Location = new System.Drawing.Point(108, 135);
-            this.vehiclesLabel.Name = "vehiclesLabel";
-            this.vehiclesLabel.Size = new System.Drawing.Size(83, 30);
-            this.vehiclesLabel.TabIndex = 3;
-            this.vehiclesLabel.Text = "Vehicle";
-            // 
-            // customersLabel
-            // 
-            this.customersLabel.AutoSize = true;
-            this.customersLabel.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.customersLabel.ForeColor = System.Drawing.Color.DodgerBlue;
-            this.customersLabel.Location = new System.Drawing.Point(108, 79);
-            this.customersLabel.Name = "customersLabel";
-            this.customersLabel.Size = new System.Drawing.Size(107, 30);
-            this.customersLabel.TabIndex = 1;
-            this.customersLabel.Text = "Customer";
-            // 
-            // bookingLabel
-            // 
-            this.bookingLabel.AutoSize = true;
-            this.bookingLabel.Font = new System.Drawing.Font("Segoe UI", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.bookingLabel.ForeColor = System.Drawing.Color.DodgerBlue;
-            this.bookingLabel.Location = new System.Drawing.Point(472, 9);
-            this.bookingLabel.Name = "bookingLabel";
-            this.bookingLabel.Size = new System.Drawing.Size(145, 40);
-            this.bookingLabel.TabIndex = 0;
-            this.bookingLabel.Text = "Bookings";
+            this.customerAddressTb.Location = new System.Drawing.Point(756, 77);
+            this.customerAddressTb.Multiline = true;
+            this.customerAddressTb.Name = "customerAddressTb";
+            this.customerAddressTb.Size = new System.Drawing.Size(199, 86);
+            this.customerAddressTb.TabIndex = 19;
             // 
             // dataGridView1
             // 
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(174, 402);
+            this.dataGridView1.Location = new System.Drawing.Point(230, 387);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowTemplate.Height = 25;
-            this.dataGridView1.Size = new System.Drawing.Size(1064, 429);
-            this.dataGridView1.TabIndex = 27;
+            this.dataGridView1.Size = new System.Drawing.Size(1056, 412);
+            this.dataGridView1.TabIndex = 26;
             // 
             // panel3
             // 
             this.panel3.BackColor = System.Drawing.Color.White;
             this.panel3.Controls.Add(this.panel4);
-            this.panel3.Location = new System.Drawing.Point(254, 264);
+            this.panel3.Location = new System.Drawing.Point(299, 251);
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(897, 115);
-            this.panel3.TabIndex = 28;
+            this.panel3.TabIndex = 29;
             // 
             // panel4
             // 
@@ -440,15 +363,14 @@
             this.addNewBtn.Text = "Add New";
             this.addNewBtn.UseVisualStyleBackColor = false;
             // 
-            // Bookings
+            // Customers
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1393, 843);
             this.Controls.Add(this.panel3);
             this.Controls.Add(this.dataGridView1);
-            this.Controls.Add(this.panel1);
-            this.Controls.Add(this.driversLabel);
+            this.Controls.Add(this.label1);
             this.Controls.Add(this.pictureBox2);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.exitLabel);
@@ -461,9 +383,12 @@
             this.Controls.Add(this.vehiclesPicBox);
             this.Controls.Add(this.customerLabel);
             this.Controls.Add(this.customerPicBox);
-            this.Name = "Bookings";
+            this.Controls.Add(this.panel1);
+            this.Name = "Customers";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Bookings";
+            this.Text = "Customers";
+            this.panel1.ResumeLayout(false);
+            this.panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.exitPicBox)).EndInit();
@@ -471,8 +396,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.bookingPicBox)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.vehiclesPicBox)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.customerPicBox)).EndInit();
-            this.panel1.ResumeLayout(false);
-            this.panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.panel3.ResumeLayout(false);
             this.panel4.ResumeLayout(false);
@@ -483,7 +406,14 @@
 
         #endregion
 
-        private Label driversLabel;
+        private Panel panel1;
+        private Label userPhoneLabel;
+        private Label customerAddressLabel;
+        private TextBox customerPhoneTb;
+        private TextBox customerNameTb;
+        private Label customerNameLabel;
+        private Label manageCustomersLabel;
+        private Label label1;
         private PictureBox pictureBox2;
         private PictureBox pictureBox1;
         private Label exitLabel;
@@ -496,20 +426,7 @@
         private PictureBox vehiclesPicBox;
         private Label customerLabel;
         private PictureBox customerPicBox;
-        private Panel panel1;
-        private ComboBox customerCb;
-        private ComboBox VehicleCb;
-        private DateTimePicker retutnDateTimePicker1;
-        private DateTimePicker pickupDateTimePicker1;
-        private Label userPhoneLabel;
-        private Label driverLabel;
-        private ComboBox driverCb;
-        private Label returnDateLabel;
-        private TextBox userPhoneTb;
-        private Label pickupDateLabel;
-        private Label vehiclesLabel;
-        private Label customersLabel;
-        private Label bookingLabel;
+        private TextBox customerAddressTb;
         private DataGridView dataGridView1;
         private Panel panel3;
         private Panel panel4;
