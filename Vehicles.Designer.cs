@@ -59,7 +59,7 @@
             this.dashboardPicBox = new System.Windows.Forms.PictureBox();
             this.exitLabel = new System.Windows.Forms.Label();
             this.exitPicBox = new System.Windows.Forms.PictureBox();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.iconPicBox = new System.Windows.Forms.PictureBox();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.panel3 = new System.Windows.Forms.Panel();
             this.panel4 = new System.Windows.Forms.Panel();
@@ -67,19 +67,19 @@
             this.deleteBtn = new System.Windows.Forms.Button();
             this.displayBtn = new System.Windows.Forms.Button();
             this.addNewBtn = new System.Windows.Forms.Button();
-            this.label1 = new System.Windows.Forms.Label();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.driverLabel = new System.Windows.Forms.Label();
+            this.driverPicBox = new System.Windows.Forms.PictureBox();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.customerPicBox)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.vehiclesPicBox)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.bookingPicBox)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dashboardPicBox)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.exitPicBox)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.iconPicBox)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.panel3.SuspendLayout();
             this.panel4.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.driverPicBox)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
@@ -397,15 +397,15 @@
             this.exitPicBox.TabIndex = 10;
             this.exitPicBox.TabStop = false;
             // 
-            // pictureBox1
+            // iconPicBox
             // 
-            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(12, 12);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(51, 49);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox1.TabIndex = 12;
-            this.pictureBox1.TabStop = false;
+            this.iconPicBox.Image = ((System.Drawing.Image)(resources.GetObject("iconPicBox.Image")));
+            this.iconPicBox.Location = new System.Drawing.Point(12, 12);
+            this.iconPicBox.Name = "iconPicBox";
+            this.iconPicBox.Size = new System.Drawing.Size(51, 49);
+            this.iconPicBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.iconPicBox.TabIndex = 12;
+            this.iconPicBox.TabStop = false;
             // 
             // dataGridView1
             // 
@@ -485,36 +485,36 @@
             this.addNewBtn.Text = "Add New";
             this.addNewBtn.UseVisualStyleBackColor = false;
             // 
-            // label1
+            // driverLabel
             // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label1.Location = new System.Drawing.Point(60, 178);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(81, 30);
-            this.label1.TabIndex = 3;
-            this.label1.Text = "Drivers";
+            this.driverLabel.AutoSize = true;
+            this.driverLabel.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.driverLabel.Location = new System.Drawing.Point(60, 178);
+            this.driverLabel.Name = "driverLabel";
+            this.driverLabel.Size = new System.Drawing.Size(81, 30);
+            this.driverLabel.TabIndex = 3;
+            this.driverLabel.Text = "Drivers";
             // 
-            // pictureBox2
+            // driverPicBox
             // 
-            this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
-            this.pictureBox2.Location = new System.Drawing.Point(67, 113);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(61, 62);
-            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox2.TabIndex = 2;
-            this.pictureBox2.TabStop = false;
+            this.driverPicBox.Image = ((System.Drawing.Image)(resources.GetObject("driverPicBox.Image")));
+            this.driverPicBox.Location = new System.Drawing.Point(67, 113);
+            this.driverPicBox.Name = "driverPicBox";
+            this.driverPicBox.Size = new System.Drawing.Size(61, 62);
+            this.driverPicBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.driverPicBox.TabIndex = 2;
+            this.driverPicBox.TabStop = false;
             // 
             // Vehicle
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1393, 843);
-            this.Controls.Add(this.label1);
+            this.Controls.Add(this.driverLabel);
             this.Controls.Add(this.panel3);
-            this.Controls.Add(this.pictureBox2);
+            this.Controls.Add(this.driverPicBox);
             this.Controls.Add(this.dataGridView1);
-            this.Controls.Add(this.pictureBox1);
+            this.Controls.Add(this.iconPicBox);
             this.Controls.Add(this.exitLabel);
             this.Controls.Add(this.exitPicBox);
             this.Controls.Add(this.dashboardLabel);
@@ -537,11 +537,11 @@
             ((System.ComponentModel.ISupportInitialize)(this.bookingPicBox)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dashboardPicBox)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.exitPicBox)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.iconPicBox)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.panel3.ResumeLayout(false);
             this.panel4.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.driverPicBox)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -579,7 +579,7 @@
         private PictureBox dashboardPicBox;
         private Label exitLabel;
         private PictureBox exitPicBox;
-        private PictureBox pictureBox1;
+        private PictureBox iconPicBox;
         private DataGridView dataGridView1;
         private Panel panel3;
         private Panel panel4;
@@ -587,7 +587,7 @@
         private Button deleteBtn;
         private Button displayBtn;
         private Button addNewBtn;
-        private Label label1;
-        private PictureBox pictureBox2;
+        private Label driverLabel;
+        private PictureBox driverPicBox;
     }
 }

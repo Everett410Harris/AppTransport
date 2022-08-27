@@ -30,8 +30,8 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Bookings));
             this.driversLabel = new System.Windows.Forms.Label();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.driverPicBox = new System.Windows.Forms.PictureBox();
+            this.iconPicBox = new System.Windows.Forms.PictureBox();
             this.exitLabel = new System.Windows.Forms.Label();
             this.exitPicBox = new System.Windows.Forms.PictureBox();
             this.dashboardLabel = new System.Windows.Forms.Label();
@@ -56,22 +56,22 @@
             this.vehiclesLabel = new System.Windows.Forms.Label();
             this.customersLabel = new System.Windows.Forms.Label();
             this.bookingLabel = new System.Windows.Forms.Label();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.bookingdataGridView1 = new System.Windows.Forms.DataGridView();
             this.panel3 = new System.Windows.Forms.Panel();
             this.panel4 = new System.Windows.Forms.Panel();
             this.resetBtn = new System.Windows.Forms.Button();
             this.deleteBtn = new System.Windows.Forms.Button();
             this.displayBtn = new System.Windows.Forms.Button();
             this.addNewBtn = new System.Windows.Forms.Button();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.driverPicBox)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.iconPicBox)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.exitPicBox)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dashboardPicBox)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.bookingPicBox)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.vehiclesPicBox)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.customerPicBox)).BeginInit();
             this.panel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.bookingdataGridView1)).BeginInit();
             this.panel3.SuspendLayout();
             this.panel4.SuspendLayout();
             this.SuspendLayout();
@@ -86,25 +86,25 @@
             this.driversLabel.TabIndex = 15;
             this.driversLabel.Text = "Drivers";
             // 
-            // pictureBox2
+            // driverPicBox
             // 
-            this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
-            this.pictureBox2.Location = new System.Drawing.Point(56, 103);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(61, 62);
-            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox2.TabIndex = 13;
-            this.pictureBox2.TabStop = false;
+            this.driverPicBox.Image = ((System.Drawing.Image)(resources.GetObject("driverPicBox.Image")));
+            this.driverPicBox.Location = new System.Drawing.Point(56, 103);
+            this.driverPicBox.Name = "driverPicBox";
+            this.driverPicBox.Size = new System.Drawing.Size(61, 62);
+            this.driverPicBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.driverPicBox.TabIndex = 13;
+            this.driverPicBox.TabStop = false;
             // 
-            // pictureBox1
+            // iconPicBox
             // 
-            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(1, 2);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(51, 49);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox1.TabIndex = 25;
-            this.pictureBox1.TabStop = false;
+            this.iconPicBox.Image = ((System.Drawing.Image)(resources.GetObject("iconPicBox.Image")));
+            this.iconPicBox.Location = new System.Drawing.Point(1, 2);
+            this.iconPicBox.Name = "iconPicBox";
+            this.iconPicBox.Size = new System.Drawing.Size(51, 49);
+            this.iconPicBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.iconPicBox.TabIndex = 25;
+            this.iconPicBox.TabStop = false;
             // 
             // exitLabel
             // 
@@ -362,14 +362,14 @@
             this.bookingLabel.TabIndex = 0;
             this.bookingLabel.Text = "Bookings";
             // 
-            // dataGridView1
+            // bookingdataGridView1
             // 
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(174, 402);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.RowTemplate.Height = 25;
-            this.dataGridView1.Size = new System.Drawing.Size(1064, 429);
-            this.dataGridView1.TabIndex = 27;
+            this.bookingdataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.bookingdataGridView1.Location = new System.Drawing.Point(174, 402);
+            this.bookingdataGridView1.Name = "bookingdataGridView1";
+            this.bookingdataGridView1.RowTemplate.Height = 25;
+            this.bookingdataGridView1.Size = new System.Drawing.Size(1064, 429);
+            this.bookingdataGridView1.TabIndex = 27;
             // 
             // panel3
             // 
@@ -446,11 +446,11 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1393, 843);
             this.Controls.Add(this.panel3);
-            this.Controls.Add(this.dataGridView1);
+            this.Controls.Add(this.bookingdataGridView1);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.driversLabel);
-            this.Controls.Add(this.pictureBox2);
-            this.Controls.Add(this.pictureBox1);
+            this.Controls.Add(this.driverPicBox);
+            this.Controls.Add(this.iconPicBox);
             this.Controls.Add(this.exitLabel);
             this.Controls.Add(this.exitPicBox);
             this.Controls.Add(this.dashboardLabel);
@@ -464,8 +464,8 @@
             this.Name = "Bookings";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Bookings";
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.driverPicBox)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.iconPicBox)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.exitPicBox)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dashboardPicBox)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.bookingPicBox)).EndInit();
@@ -473,7 +473,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.customerPicBox)).EndInit();
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.bookingdataGridView1)).EndInit();
             this.panel3.ResumeLayout(false);
             this.panel4.ResumeLayout(false);
             this.ResumeLayout(false);
@@ -484,8 +484,8 @@
         #endregion
 
         private Label driversLabel;
-        private PictureBox pictureBox2;
-        private PictureBox pictureBox1;
+        private PictureBox driverPicBox;
+        private PictureBox iconPicBox;
         private Label exitLabel;
         private PictureBox exitPicBox;
         private Label dashboardLabel;
@@ -510,7 +510,7 @@
         private Label vehiclesLabel;
         private Label customersLabel;
         private Label bookingLabel;
-        private DataGridView dataGridView1;
+        private DataGridView bookingdataGridView1;
         private Panel panel3;
         private Panel panel4;
         private Button resetBtn;

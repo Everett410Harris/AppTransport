@@ -43,17 +43,17 @@
             this.userNameTb = new System.Windows.Forms.TextBox();
             this.userNameLabel = new System.Windows.Forms.Label();
             this.usersLabel = new System.Windows.Forms.Label();
-            this.label1 = new System.Windows.Forms.Label();
+            this.userLabel = new System.Windows.Forms.Label();
             this.userPicBox = new System.Windows.Forms.PictureBox();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.iconPicBox = new System.Windows.Forms.PictureBox();
             this.exitLabel = new System.Windows.Forms.Label();
             this.exitPicBox = new System.Windows.Forms.PictureBox();
             this.dashboardLabel = new System.Windows.Forms.Label();
             this.dashboardPicBox = new System.Windows.Forms.PictureBox();
-            this.button1 = new System.Windows.Forms.Button();
+            this.loginBtn = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.userPicBox)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.iconPicBox)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.exitPicBox)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dashboardPicBox)).BeginInit();
             this.SuspendLayout();
@@ -210,15 +210,15 @@
             this.usersLabel.TabIndex = 0;
             this.usersLabel.Text = "Users";
             // 
-            // label1
+            // userLabel
             // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label1.Location = new System.Drawing.Point(65, 173);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(65, 30);
-            this.label1.TabIndex = 15;
-            this.label1.Text = "Users";
+            this.userLabel.AutoSize = true;
+            this.userLabel.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.userLabel.Location = new System.Drawing.Point(65, 173);
+            this.userLabel.Name = "userLabel";
+            this.userLabel.Size = new System.Drawing.Size(65, 30);
+            this.userLabel.TabIndex = 15;
+            this.userLabel.Text = "Users";
             // 
             // userPicBox
             // 
@@ -230,15 +230,15 @@
             this.userPicBox.TabIndex = 13;
             this.userPicBox.TabStop = false;
             // 
-            // pictureBox1
+            // iconPicBox
             // 
-            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(10, 7);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(51, 49);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox1.TabIndex = 25;
-            this.pictureBox1.TabStop = false;
+            this.iconPicBox.Image = ((System.Drawing.Image)(resources.GetObject("iconPicBox.Image")));
+            this.iconPicBox.Location = new System.Drawing.Point(10, 7);
+            this.iconPicBox.Name = "iconPicBox";
+            this.iconPicBox.Size = new System.Drawing.Size(51, 49);
+            this.iconPicBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.iconPicBox.TabIndex = 25;
+            this.iconPicBox.TabStop = false;
             // 
             // exitLabel
             // 
@@ -280,27 +280,27 @@
             this.dashboardPicBox.TabIndex = 21;
             this.dashboardPicBox.TabStop = false;
             // 
-            // button1
+            // loginBtn
             // 
-            this.button1.BackColor = System.Drawing.Color.Chartreuse;
-            this.button1.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.button1.ForeColor = System.Drawing.Color.Salmon;
-            this.button1.Location = new System.Drawing.Point(666, 278);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(140, 43);
-            this.button1.TabIndex = 26;
-            this.button1.Text = "Login";
-            this.button1.UseVisualStyleBackColor = false;
+            this.loginBtn.BackColor = System.Drawing.Color.Chartreuse;
+            this.loginBtn.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.loginBtn.ForeColor = System.Drawing.Color.Salmon;
+            this.loginBtn.Location = new System.Drawing.Point(666, 278);
+            this.loginBtn.Name = "loginBtn";
+            this.loginBtn.Size = new System.Drawing.Size(140, 43);
+            this.loginBtn.TabIndex = 26;
+            this.loginBtn.Text = "Login";
+            this.loginBtn.UseVisualStyleBackColor = false;
             // 
             // Users
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1393, 843);
-            this.Controls.Add(this.button1);
-            this.Controls.Add(this.label1);
+            this.Controls.Add(this.loginBtn);
+            this.Controls.Add(this.userLabel);
             this.Controls.Add(this.userPicBox);
-            this.Controls.Add(this.pictureBox1);
+            this.Controls.Add(this.iconPicBox);
             this.Controls.Add(this.exitLabel);
             this.Controls.Add(this.exitPicBox);
             this.Controls.Add(this.dashboardLabel);
@@ -312,7 +312,7 @@
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.userPicBox)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.iconPicBox)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.exitPicBox)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dashboardPicBox)).EndInit();
             this.ResumeLayout(false);
@@ -336,13 +336,13 @@
         private TextBox userNameTb;
         private Label userNameLabel;
         private Label usersLabel;
-        private Label label1;
+        private Label userLabel;
         private PictureBox userPicBox;
-        private PictureBox pictureBox1;
+        private PictureBox iconPicBox;
         private Label exitLabel;
         private PictureBox exitPicBox;
         private Label dashboardLabel;
         private PictureBox dashboardPicBox;
-        private Button button1;
+        private Button loginBtn;
     }
 }

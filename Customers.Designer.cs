@@ -30,14 +30,14 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Customers));
             this.panel1 = new System.Windows.Forms.Panel();
-            this.userPhoneLabel = new System.Windows.Forms.Label();
+            this.customerPhoneLabel = new System.Windows.Forms.Label();
             this.customerAddressLabel = new System.Windows.Forms.Label();
             this.customerPhoneTb = new System.Windows.Forms.TextBox();
             this.customerNameTb = new System.Windows.Forms.TextBox();
             this.customerNameLabel = new System.Windows.Forms.Label();
             this.manageCustomersLabel = new System.Windows.Forms.Label();
-            this.label1 = new System.Windows.Forms.Label();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.driverLabel = new System.Windows.Forms.Label();
+            this.driverPicBox = new System.Windows.Forms.PictureBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.exitLabel = new System.Windows.Forms.Label();
             this.exitPicBox = new System.Windows.Forms.PictureBox();
@@ -50,7 +50,7 @@
             this.customerLabel = new System.Windows.Forms.Label();
             this.customerPicBox = new System.Windows.Forms.PictureBox();
             this.customerAddressTb = new System.Windows.Forms.TextBox();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.customersdataGridView1 = new System.Windows.Forms.DataGridView();
             this.panel3 = new System.Windows.Forms.Panel();
             this.panel4 = new System.Windows.Forms.Panel();
             this.resetBtn = new System.Windows.Forms.Button();
@@ -58,14 +58,14 @@
             this.displayBtn = new System.Windows.Forms.Button();
             this.addNewBtn = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.driverPicBox)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.exitPicBox)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dashboardPicBox)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.bookingPicBox)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.vehiclesPicBox)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.customerPicBox)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.customersdataGridView1)).BeginInit();
             this.panel3.SuspendLayout();
             this.panel4.SuspendLayout();
             this.SuspendLayout();
@@ -74,7 +74,7 @@
             // 
             this.panel1.BackColor = System.Drawing.Color.PeachPuff;
             this.panel1.Controls.Add(this.customerAddressTb);
-            this.panel1.Controls.Add(this.userPhoneLabel);
+            this.panel1.Controls.Add(this.customerPhoneLabel);
             this.panel1.Controls.Add(this.customerAddressLabel);
             this.panel1.Controls.Add(this.customerPhoneTb);
             this.panel1.Controls.Add(this.customerNameTb);
@@ -85,16 +85,16 @@
             this.panel1.Size = new System.Drawing.Size(1056, 233);
             this.panel1.TabIndex = 2;
             // 
-            // userPhoneLabel
+            // customerPhoneLabel
             // 
-            this.userPhoneLabel.AutoSize = true;
-            this.userPhoneLabel.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.userPhoneLabel.ForeColor = System.Drawing.Color.DodgerBlue;
-            this.userPhoneLabel.Location = new System.Drawing.Point(42, 188);
-            this.userPhoneLabel.Name = "userPhoneLabel";
-            this.userPhoneLabel.Size = new System.Drawing.Size(176, 30);
-            this.userPhoneLabel.TabIndex = 18;
-            this.userPhoneLabel.Text = "Customer Phone";
+            this.customerPhoneLabel.AutoSize = true;
+            this.customerPhoneLabel.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.customerPhoneLabel.ForeColor = System.Drawing.Color.DodgerBlue;
+            this.customerPhoneLabel.Location = new System.Drawing.Point(42, 188);
+            this.customerPhoneLabel.Name = "customerPhoneLabel";
+            this.customerPhoneLabel.Size = new System.Drawing.Size(176, 30);
+            this.customerPhoneLabel.TabIndex = 18;
+            this.customerPhoneLabel.Text = "Customer Phone";
             // 
             // customerAddressLabel
             // 
@@ -145,25 +145,25 @@
             this.manageCustomersLabel.TabIndex = 0;
             this.manageCustomersLabel.Text = "Manage Customers";
             // 
-            // label1
+            // driverLabel
             // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label1.Location = new System.Drawing.Point(49, 169);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(81, 30);
-            this.label1.TabIndex = 15;
-            this.label1.Text = "Drivers";
+            this.driverLabel.AutoSize = true;
+            this.driverLabel.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.driverLabel.Location = new System.Drawing.Point(49, 169);
+            this.driverLabel.Name = "driverLabel";
+            this.driverLabel.Size = new System.Drawing.Size(81, 30);
+            this.driverLabel.TabIndex = 15;
+            this.driverLabel.Text = "Drivers";
             // 
-            // pictureBox2
+            // driverPicBox
             // 
-            this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
-            this.pictureBox2.Location = new System.Drawing.Point(56, 104);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(61, 62);
-            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox2.TabIndex = 13;
-            this.pictureBox2.TabStop = false;
+            this.driverPicBox.Image = ((System.Drawing.Image)(resources.GetObject("driverPicBox.Image")));
+            this.driverPicBox.Location = new System.Drawing.Point(56, 104);
+            this.driverPicBox.Name = "driverPicBox";
+            this.driverPicBox.Size = new System.Drawing.Size(61, 62);
+            this.driverPicBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.driverPicBox.TabIndex = 13;
+            this.driverPicBox.TabStop = false;
             // 
             // pictureBox1
             // 
@@ -285,14 +285,14 @@
             this.customerAddressTb.Size = new System.Drawing.Size(199, 86);
             this.customerAddressTb.TabIndex = 19;
             // 
-            // dataGridView1
+            // customersdataGridView1
             // 
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(230, 387);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.RowTemplate.Height = 25;
-            this.dataGridView1.Size = new System.Drawing.Size(1056, 412);
-            this.dataGridView1.TabIndex = 26;
+            this.customersdataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.customersdataGridView1.Location = new System.Drawing.Point(230, 387);
+            this.customersdataGridView1.Name = "customersdataGridView1";
+            this.customersdataGridView1.RowTemplate.Height = 25;
+            this.customersdataGridView1.Size = new System.Drawing.Size(1056, 412);
+            this.customersdataGridView1.TabIndex = 26;
             // 
             // panel3
             // 
@@ -369,9 +369,9 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1393, 843);
             this.Controls.Add(this.panel3);
-            this.Controls.Add(this.dataGridView1);
-            this.Controls.Add(this.label1);
-            this.Controls.Add(this.pictureBox2);
+            this.Controls.Add(this.customersdataGridView1);
+            this.Controls.Add(this.driverLabel);
+            this.Controls.Add(this.driverPicBox);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.exitLabel);
             this.Controls.Add(this.exitPicBox);
@@ -389,14 +389,14 @@
             this.Text = "Customers";
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.driverPicBox)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.exitPicBox)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dashboardPicBox)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.bookingPicBox)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.vehiclesPicBox)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.customerPicBox)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.customersdataGridView1)).EndInit();
             this.panel3.ResumeLayout(false);
             this.panel4.ResumeLayout(false);
             this.ResumeLayout(false);
@@ -407,14 +407,14 @@
         #endregion
 
         private Panel panel1;
-        private Label userPhoneLabel;
+        private Label customerPhoneLabel;
         private Label customerAddressLabel;
         private TextBox customerPhoneTb;
         private TextBox customerNameTb;
         private Label customerNameLabel;
         private Label manageCustomersLabel;
-        private Label label1;
-        private PictureBox pictureBox2;
+        private Label driverLabel;
+        private PictureBox driverPicBox;
         private PictureBox pictureBox1;
         private Label exitLabel;
         private PictureBox exitPicBox;
@@ -427,7 +427,7 @@
         private Label customerLabel;
         private PictureBox customerPicBox;
         private TextBox customerAddressTb;
-        private DataGridView dataGridView1;
+        private DataGridView customersdataGridView1;
         private Panel panel3;
         private Panel panel4;
         private Button resetBtn;
