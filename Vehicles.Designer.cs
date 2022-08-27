@@ -60,7 +60,7 @@
             this.exitLabel = new System.Windows.Forms.Label();
             this.exitPicBox = new System.Windows.Forms.PictureBox();
             this.iconPicBox = new System.Windows.Forms.PictureBox();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.vehicledataGridView1 = new System.Windows.Forms.DataGridView();
             this.panel3 = new System.Windows.Forms.Panel();
             this.panel4 = new System.Windows.Forms.Panel();
             this.resetBtn = new System.Windows.Forms.Button();
@@ -76,7 +76,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.dashboardPicBox)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.exitPicBox)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.iconPicBox)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.vehicledataGridView1)).BeginInit();
             this.panel3.SuspendLayout();
             this.panel4.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.driverPicBox)).BeginInit();
@@ -407,14 +407,14 @@
             this.iconPicBox.TabIndex = 12;
             this.iconPicBox.TabStop = false;
             // 
-            // dataGridView1
+            // vehicledataGridView1
             // 
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(177, 373);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.RowTemplate.Height = 25;
-            this.dataGridView1.Size = new System.Drawing.Size(1115, 458);
-            this.dataGridView1.TabIndex = 13;
+            this.vehicledataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.vehicledataGridView1.Location = new System.Drawing.Point(177, 373);
+            this.vehicledataGridView1.Name = "vehicledataGridView1";
+            this.vehicledataGridView1.RowTemplate.Height = 25;
+            this.vehicledataGridView1.Size = new System.Drawing.Size(1115, 458);
+            this.vehicledataGridView1.TabIndex = 13;
             // 
             // panel3
             // 
@@ -513,7 +513,7 @@
             this.Controls.Add(this.driverLabel);
             this.Controls.Add(this.panel3);
             this.Controls.Add(this.driverPicBox);
-            this.Controls.Add(this.dataGridView1);
+            this.Controls.Add(this.vehicledataGridView1);
             this.Controls.Add(this.iconPicBox);
             this.Controls.Add(this.exitLabel);
             this.Controls.Add(this.exitPicBox);
@@ -538,7 +538,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.dashboardPicBox)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.exitPicBox)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.iconPicBox)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.vehicledataGridView1)).EndInit();
             this.panel3.ResumeLayout(false);
             this.panel4.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.driverPicBox)).EndInit();
@@ -580,7 +580,7 @@
         private Label exitLabel;
         private PictureBox exitPicBox;
         private PictureBox iconPicBox;
-        private DataGridView dataGridView1;
+        private DataGridView vehicledataGridView1;
         private Panel panel3;
         private Panel panel4;
         private Button resetBtn;

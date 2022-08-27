@@ -291,7 +291,7 @@
             this.customersdataGridView1.Location = new System.Drawing.Point(230, 387);
             this.customersdataGridView1.Name = "customersdataGridView1";
             this.customersdataGridView1.RowTemplate.Height = 25;
-            this.customersdataGridView1.Size = new System.Drawing.Size(1056, 412);
+            this.customersdataGridView1.Size = new System.Drawing.Size(1056, 444);
             this.customersdataGridView1.TabIndex = 26;
             // 
             // panel3
