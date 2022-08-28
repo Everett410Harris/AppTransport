@@ -57,6 +57,12 @@
             this.displayBtn = new System.Windows.Forms.Button();
             this.addNewBtn = new System.Windows.Forms.Button();
             this.driverdataGridView1 = new System.Windows.Forms.DataGridView();
+            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
+            this.label1 = new System.Windows.Forms.Label();
+            this.driverGenderLabel = new System.Windows.Forms.Label();
+            this.driverGenderCb = new System.Windows.Forms.ComboBox();
+            this.driverAddressTb = new System.Windows.Forms.TextBox();
+            this.driversAddressLabel = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.iconPicBox)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.exitPicBox)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dashboardPicBox)).BeginInit();
@@ -205,6 +211,12 @@
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.PeachPuff;
+            this.panel1.Controls.Add(this.driverAddressTb);
+            this.panel1.Controls.Add(this.driversAddressLabel);
+            this.panel1.Controls.Add(this.driverGenderCb);
+            this.panel1.Controls.Add(this.driverGenderLabel);
+            this.panel1.Controls.Add(this.label1);
+            this.panel1.Controls.Add(this.dateTimePicker1);
             this.panel1.Controls.Add(this.driverDOBdateTimePicker1);
             this.panel1.Controls.Add(this.driversDOBLabel);
             this.panel1.Controls.Add(this.driversPhoneTb);
@@ -242,7 +254,7 @@
             this.driversPhoneTb.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.driversPhoneTb.Location = new System.Drawing.Point(175, 130);
             this.driversPhoneTb.Name = "driversPhoneTb";
-            this.driversPhoneTb.Size = new System.Drawing.Size(140, 35);
+            this.driversPhoneTb.Size = new System.Drawing.Size(175, 35);
             this.driversPhoneTb.TabIndex = 4;
             // 
             // mileageLabel
@@ -261,7 +273,7 @@
             this.driversNameTb.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.driversNameTb.Location = new System.Drawing.Point(175, 74);
             this.driversNameTb.Name = "driversNameTb";
-            this.driversNameTb.Size = new System.Drawing.Size(140, 35);
+            this.driversNameTb.Size = new System.Drawing.Size(175, 35);
             this.driversNameTb.TabIndex = 2;
             // 
             // licensePlateLabel
@@ -364,6 +376,70 @@
             this.driverdataGridView1.Size = new System.Drawing.Size(1115, 459);
             this.driverdataGridView1.TabIndex = 27;
             // 
+            // dateTimePicker1
+            // 
+            this.dateTimePicker1.CalendarFont = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.dateTimePicker1.Format = System.Windows.Forms.DateTimePickerFormat.Short;
+            this.dateTimePicker1.Location = new System.Drawing.Point(748, 196);
+            this.dateTimePicker1.Name = "dateTimePicker1";
+            this.dateTimePicker1.Size = new System.Drawing.Size(175, 23);
+            this.dateTimePicker1.TabIndex = 20;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.label1.ForeColor = System.Drawing.Color.DodgerBlue;
+            this.label1.Location = new System.Drawing.Point(543, 189);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(184, 30);
+            this.label1.TabIndex = 21;
+            this.label1.Text = "Driver\'s Join Date";
+            // 
+            // driverGenderLabel
+            // 
+            this.driverGenderLabel.AutoSize = true;
+            this.driverGenderLabel.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.driverGenderLabel.ForeColor = System.Drawing.Color.DodgerBlue;
+            this.driverGenderLabel.Location = new System.Drawing.Point(550, 135);
+            this.driverGenderLabel.Name = "driverGenderLabel";
+            this.driverGenderLabel.Size = new System.Drawing.Size(84, 30);
+            this.driverGenderLabel.TabIndex = 22;
+            this.driverGenderLabel.Text = "Gender";
+            // 
+            // driverGenderCb
+            // 
+            this.driverGenderCb.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.driverGenderCb.FormattingEnabled = true;
+            this.driverGenderCb.Items.AddRange(new object[] {
+            "",
+            "Female",
+            "Male",
+            "Other"});
+            this.driverGenderCb.Location = new System.Drawing.Point(745, 127);
+            this.driverGenderCb.Name = "driverGenderCb";
+            this.driverGenderCb.Size = new System.Drawing.Size(178, 38);
+            this.driverGenderCb.TabIndex = 23;
+            // 
+            // driverAddressTb
+            // 
+            this.driverAddressTb.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.driverAddressTb.Location = new System.Drawing.Point(745, 71);
+            this.driverAddressTb.Name = "driverAddressTb";
+            this.driverAddressTb.Size = new System.Drawing.Size(175, 35);
+            this.driverAddressTb.TabIndex = 25;
+            // 
+            // driversAddressLabel
+            // 
+            this.driversAddressLabel.AutoSize = true;
+            this.driversAddressLabel.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.driversAddressLabel.ForeColor = System.Drawing.Color.DodgerBlue;
+            this.driversAddressLabel.Location = new System.Drawing.Point(550, 74);
+            this.driversAddressLabel.Name = "driversAddressLabel";
+            this.driversAddressLabel.Size = new System.Drawing.Size(170, 30);
+            this.driversAddressLabel.TabIndex = 24;
+            this.driversAddressLabel.Text = "Driver\'s Address";
+            // 
             // Drivers
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
@@ -435,5 +511,11 @@
         private Button displayBtn;
         private Button addNewBtn;
         private DataGridView driverdataGridView1;
+        private TextBox driverAddressTb;
+        private Label driversAddressLabel;
+        private ComboBox driverGenderCb;
+        private Label driverGenderLabel;
+        private Label label1;
+        private DateTimePicker dateTimePicker1;
     }
 }
