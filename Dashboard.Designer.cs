@@ -43,30 +43,30 @@
             this.customerLabel = new System.Windows.Forms.Label();
             this.customerPicBox = new System.Windows.Forms.PictureBox();
             this.dashLabel = new System.Windows.Forms.Label();
-            this.panel1 = new System.Windows.Forms.Panel();
+            this.vehiclesPanel = new System.Windows.Forms.Panel();
+            this.label2 = new System.Windows.Forms.Label();
+            this.labelVehicles = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
             this.panel3 = new System.Windows.Forms.Panel();
-            this.panel4 = new System.Windows.Forms.Panel();
+            this.driversPanel = new System.Windows.Forms.Panel();
+            this.label7 = new System.Windows.Forms.Label();
+            this.labelDrivers = new System.Windows.Forms.Label();
             this.panel5 = new System.Windows.Forms.Panel();
-            this.panel6 = new System.Windows.Forms.Panel();
+            this.usersPanel = new System.Windows.Forms.Panel();
+            this.label3 = new System.Windows.Forms.Label();
+            this.labelUsers = new System.Windows.Forms.Label();
             this.panel7 = new System.Windows.Forms.Panel();
             this.panel8 = new System.Windows.Forms.Panel();
-            this.panel9 = new System.Windows.Forms.Panel();
-            this.panel10 = new System.Windows.Forms.Panel();
-            this.panel11 = new System.Windows.Forms.Panel();
-            this.panel12 = new System.Windows.Forms.Panel();
-            this.labelVehicles = new System.Windows.Forms.Label();
-            this.labelUsers = new System.Windows.Forms.Label();
-            this.labelBookings = new System.Windows.Forms.Label();
-            this.labelDrivers = new System.Windows.Forms.Label();
-            this.labelcustomers = new System.Windows.Forms.Label();
-            this.incomeLabel = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
-            this.label7 = new System.Windows.Forms.Label();
+            this.labelcustomers = new System.Windows.Forms.Label();
+            this.panel9 = new System.Windows.Forms.Panel();
+            this.bookingsPanel = new System.Windows.Forms.Panel();
+            this.label4 = new System.Windows.Forms.Label();
+            this.labelBookings = new System.Windows.Forms.Label();
+            this.panel11 = new System.Windows.Forms.Panel();
+            this.incomePanel = new System.Windows.Forms.Panel();
+            this.label5 = new System.Windows.Forms.Label();
+            this.incomeLabel = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.driverPicBox)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.iconPicBox)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.exitPicBox)).BeginInit();
@@ -74,12 +74,12 @@
             ((System.ComponentModel.ISupportInitialize)(this.bookingPicBox)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.vehiclesPicBox)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.customerPicBox)).BeginInit();
-            this.panel1.SuspendLayout();
-            this.panel4.SuspendLayout();
-            this.panel6.SuspendLayout();
+            this.vehiclesPanel.SuspendLayout();
+            this.driversPanel.SuspendLayout();
+            this.usersPanel.SuspendLayout();
             this.panel8.SuspendLayout();
-            this.panel10.SuspendLayout();
-            this.panel12.SuspendLayout();
+            this.bookingsPanel.SuspendLayout();
+            this.incomePanel.SuspendLayout();
             this.SuspendLayout();
             // 
             // driverLabel
@@ -226,15 +226,37 @@
             this.dashLabel.TabIndex = 39;
             this.dashLabel.Text = "Dashboard";
             // 
-            // panel1
+            // vehiclesPanel
             // 
-            this.panel1.BackColor = System.Drawing.Color.Brown;
-            this.panel1.Controls.Add(this.label2);
-            this.panel1.Controls.Add(this.labelVehicles);
-            this.panel1.Location = new System.Drawing.Point(285, 151);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(253, 147);
-            this.panel1.TabIndex = 41;
+            this.vehiclesPanel.BackColor = System.Drawing.Color.Brown;
+            this.vehiclesPanel.Controls.Add(this.label2);
+            this.vehiclesPanel.Controls.Add(this.labelVehicles);
+            this.vehiclesPanel.Location = new System.Drawing.Point(285, 151);
+            this.vehiclesPanel.Name = "vehiclesPanel";
+            this.vehiclesPanel.Size = new System.Drawing.Size(253, 147);
+            this.vehiclesPanel.TabIndex = 41;
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.label2.ForeColor = System.Drawing.Color.PapayaWhip;
+            this.label2.Location = new System.Drawing.Point(168, 78);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(56, 25);
+            this.label2.TabIndex = 1;
+            this.label2.Text = "Num";
+            // 
+            // labelVehicles
+            // 
+            this.labelVehicles.AutoSize = true;
+            this.labelVehicles.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.labelVehicles.ForeColor = System.Drawing.Color.PapayaWhip;
+            this.labelVehicles.Location = new System.Drawing.Point(120, 18);
+            this.labelVehicles.Name = "labelVehicles";
+            this.labelVehicles.Size = new System.Drawing.Size(82, 25);
+            this.labelVehicles.TabIndex = 0;
+            this.labelVehicles.Text = "Vehicles";
             // 
             // panel2
             // 
@@ -252,15 +274,37 @@
             this.panel3.Size = new System.Drawing.Size(14, 147);
             this.panel3.TabIndex = 44;
             // 
-            // panel4
+            // driversPanel
             // 
-            this.panel4.BackColor = System.Drawing.Color.LightSalmon;
-            this.panel4.Controls.Add(this.label7);
-            this.panel4.Controls.Add(this.labelDrivers);
-            this.panel4.Location = new System.Drawing.Point(921, 151);
-            this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(253, 147);
-            this.panel4.TabIndex = 43;
+            this.driversPanel.BackColor = System.Drawing.Color.LightSalmon;
+            this.driversPanel.Controls.Add(this.label7);
+            this.driversPanel.Controls.Add(this.labelDrivers);
+            this.driversPanel.Location = new System.Drawing.Point(921, 151);
+            this.driversPanel.Name = "driversPanel";
+            this.driversPanel.Size = new System.Drawing.Size(253, 147);
+            this.driversPanel.TabIndex = 43;
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.label7.ForeColor = System.Drawing.Color.Olive;
+            this.label7.Location = new System.Drawing.Point(167, 88);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(56, 25);
+            this.label7.TabIndex = 56;
+            this.label7.Text = "Num";
+            // 
+            // labelDrivers
+            // 
+            this.labelDrivers.AutoSize = true;
+            this.labelDrivers.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.labelDrivers.ForeColor = System.Drawing.Color.Olive;
+            this.labelDrivers.Location = new System.Drawing.Point(117, 18);
+            this.labelDrivers.Name = "labelDrivers";
+            this.labelDrivers.Size = new System.Drawing.Size(75, 25);
+            this.labelDrivers.TabIndex = 54;
+            this.labelDrivers.Text = "Drivers";
             // 
             // panel5
             // 
@@ -270,15 +314,37 @@
             this.panel5.Size = new System.Drawing.Size(14, 147);
             this.panel5.TabIndex = 46;
             // 
-            // panel6
+            // usersPanel
             // 
-            this.panel6.BackColor = System.Drawing.Color.Peru;
-            this.panel6.Controls.Add(this.label3);
-            this.panel6.Controls.Add(this.labelUsers);
-            this.panel6.Location = new System.Drawing.Point(285, 390);
-            this.panel6.Name = "panel6";
-            this.panel6.Size = new System.Drawing.Size(253, 147);
-            this.panel6.TabIndex = 45;
+            this.usersPanel.BackColor = System.Drawing.Color.Peru;
+            this.usersPanel.Controls.Add(this.label3);
+            this.usersPanel.Controls.Add(this.labelUsers);
+            this.usersPanel.Location = new System.Drawing.Point(285, 390);
+            this.usersPanel.Name = "usersPanel";
+            this.usersPanel.Size = new System.Drawing.Size(253, 147);
+            this.usersPanel.TabIndex = 45;
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.label3.ForeColor = System.Drawing.Color.Yellow;
+            this.label3.Location = new System.Drawing.Point(168, 76);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(56, 25);
+            this.label3.TabIndex = 2;
+            this.label3.Text = "Num";
+            // 
+            // labelUsers
+            // 
+            this.labelUsers.AutoSize = true;
+            this.labelUsers.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.labelUsers.ForeColor = System.Drawing.Color.Yellow;
+            this.labelUsers.Location = new System.Drawing.Point(120, 16);
+            this.labelUsers.Name = "labelUsers";
+            this.labelUsers.Size = new System.Drawing.Size(60, 25);
+            this.labelUsers.TabIndex = 1;
+            this.labelUsers.Text = "Users";
             // 
             // panel7
             // 
@@ -298,85 +364,16 @@
             this.panel8.Size = new System.Drawing.Size(253, 147);
             this.panel8.TabIndex = 47;
             // 
-            // panel9
+            // label6
             // 
-            this.panel9.BackColor = System.Drawing.Color.GreenYellow;
-            this.panel9.Location = new System.Drawing.Point(285, 626);
-            this.panel9.Name = "panel9";
-            this.panel9.Size = new System.Drawing.Size(14, 147);
-            this.panel9.TabIndex = 50;
-            // 
-            // panel10
-            // 
-            this.panel10.BackColor = System.Drawing.Color.MintCream;
-            this.panel10.Controls.Add(this.label4);
-            this.panel10.Controls.Add(this.labelBookings);
-            this.panel10.Location = new System.Drawing.Point(285, 626);
-            this.panel10.Name = "panel10";
-            this.panel10.Size = new System.Drawing.Size(253, 147);
-            this.panel10.TabIndex = 49;
-            // 
-            // panel11
-            // 
-            this.panel11.BackColor = System.Drawing.Color.Aquamarine;
-            this.panel11.Location = new System.Drawing.Point(921, 626);
-            this.panel11.Name = "panel11";
-            this.panel11.Size = new System.Drawing.Size(14, 147);
-            this.panel11.TabIndex = 52;
-            // 
-            // panel12
-            // 
-            this.panel12.BackColor = System.Drawing.Color.Coral;
-            this.panel12.Controls.Add(this.label5);
-            this.panel12.Controls.Add(this.incomeLabel);
-            this.panel12.Location = new System.Drawing.Point(921, 626);
-            this.panel12.Name = "panel12";
-            this.panel12.Size = new System.Drawing.Size(253, 147);
-            this.panel12.TabIndex = 51;
-            // 
-            // labelVehicles
-            // 
-            this.labelVehicles.AutoSize = true;
-            this.labelVehicles.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.labelVehicles.ForeColor = System.Drawing.Color.PapayaWhip;
-            this.labelVehicles.Location = new System.Drawing.Point(120, 18);
-            this.labelVehicles.Name = "labelVehicles";
-            this.labelVehicles.Size = new System.Drawing.Size(82, 25);
-            this.labelVehicles.TabIndex = 0;
-            this.labelVehicles.Text = "Vehicles";
-            // 
-            // labelUsers
-            // 
-            this.labelUsers.AutoSize = true;
-            this.labelUsers.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.labelUsers.ForeColor = System.Drawing.Color.Yellow;
-            this.labelUsers.Location = new System.Drawing.Point(120, 16);
-            this.labelUsers.Name = "labelUsers";
-            this.labelUsers.Size = new System.Drawing.Size(60, 25);
-            this.labelUsers.TabIndex = 1;
-            this.labelUsers.Text = "Users";
-            // 
-            // labelBookings
-            // 
-            this.labelBookings.AutoSize = true;
-            this.labelBookings.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.labelBookings.ForeColor = System.Drawing.Color.DarkGoldenrod;
-            this.labelBookings.Location = new System.Drawing.Point(106, 16);
-            this.labelBookings.Name = "labelBookings";
-            this.labelBookings.Size = new System.Drawing.Size(96, 25);
-            this.labelBookings.TabIndex = 53;
-            this.labelBookings.Text = "Bookings";
-            // 
-            // labelDrivers
-            // 
-            this.labelDrivers.AutoSize = true;
-            this.labelDrivers.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.labelDrivers.ForeColor = System.Drawing.Color.Olive;
-            this.labelDrivers.Location = new System.Drawing.Point(117, 18);
-            this.labelDrivers.Name = "labelDrivers";
-            this.labelDrivers.Size = new System.Drawing.Size(75, 25);
-            this.labelDrivers.TabIndex = 54;
-            this.labelDrivers.Text = "Drivers";
+            this.label6.AutoSize = true;
+            this.label6.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.label6.ForeColor = System.Drawing.Color.YellowGreen;
+            this.label6.Location = new System.Drawing.Point(167, 76);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(56, 25);
+            this.label6.TabIndex = 55;
+            this.label6.Text = "Num";
             // 
             // labelcustomers
             // 
@@ -389,38 +386,23 @@
             this.labelcustomers.TabIndex = 53;
             this.labelcustomers.Text = "Customers";
             // 
-            // incomeLabel
+            // panel9
             // 
-            this.incomeLabel.AutoSize = true;
-            this.incomeLabel.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.incomeLabel.ForeColor = System.Drawing.Color.ForestGreen;
-            this.incomeLabel.Location = new System.Drawing.Point(117, 16);
-            this.incomeLabel.Name = "incomeLabel";
-            this.incomeLabel.Size = new System.Drawing.Size(78, 25);
-            this.incomeLabel.TabIndex = 54;
-            this.incomeLabel.Text = "Income";
+            this.panel9.BackColor = System.Drawing.Color.GreenYellow;
+            this.panel9.Location = new System.Drawing.Point(285, 626);
+            this.panel9.Name = "panel9";
+            this.panel9.Size = new System.Drawing.Size(14, 147);
+            this.panel9.TabIndex = 50;
             // 
-            // label2
+            // bookingsPanel
             // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label2.ForeColor = System.Drawing.Color.PapayaWhip;
-            this.label2.Location = new System.Drawing.Point(168, 78);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(56, 25);
-            this.label2.TabIndex = 1;
-            this.label2.Text = "Num";
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label3.ForeColor = System.Drawing.Color.Yellow;
-            this.label3.Location = new System.Drawing.Point(168, 76);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(56, 25);
-            this.label3.TabIndex = 2;
-            this.label3.Text = "Num";
+            this.bookingsPanel.BackColor = System.Drawing.Color.MintCream;
+            this.bookingsPanel.Controls.Add(this.label4);
+            this.bookingsPanel.Controls.Add(this.labelBookings);
+            this.bookingsPanel.Location = new System.Drawing.Point(285, 626);
+            this.bookingsPanel.Name = "bookingsPanel";
+            this.bookingsPanel.Size = new System.Drawing.Size(253, 147);
+            this.bookingsPanel.TabIndex = 49;
             // 
             // label4
             // 
@@ -433,6 +415,35 @@
             this.label4.TabIndex = 3;
             this.label4.Text = "Num";
             // 
+            // labelBookings
+            // 
+            this.labelBookings.AutoSize = true;
+            this.labelBookings.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.labelBookings.ForeColor = System.Drawing.Color.DarkGoldenrod;
+            this.labelBookings.Location = new System.Drawing.Point(106, 16);
+            this.labelBookings.Name = "labelBookings";
+            this.labelBookings.Size = new System.Drawing.Size(96, 25);
+            this.labelBookings.TabIndex = 53;
+            this.labelBookings.Text = "Bookings";
+            // 
+            // panel11
+            // 
+            this.panel11.BackColor = System.Drawing.Color.Aquamarine;
+            this.panel11.Location = new System.Drawing.Point(921, 626);
+            this.panel11.Name = "panel11";
+            this.panel11.Size = new System.Drawing.Size(14, 147);
+            this.panel11.TabIndex = 52;
+            // 
+            // incomePanel
+            // 
+            this.incomePanel.BackColor = System.Drawing.Color.Coral;
+            this.incomePanel.Controls.Add(this.label5);
+            this.incomePanel.Controls.Add(this.incomeLabel);
+            this.incomePanel.Location = new System.Drawing.Point(921, 626);
+            this.incomePanel.Name = "incomePanel";
+            this.incomePanel.Size = new System.Drawing.Size(253, 147);
+            this.incomePanel.TabIndex = 51;
+            // 
             // label5
             // 
             this.label5.AutoSize = true;
@@ -444,27 +455,16 @@
             this.label5.TabIndex = 54;
             this.label5.Text = "Num";
             // 
-            // label6
+            // incomeLabel
             // 
-            this.label6.AutoSize = true;
-            this.label6.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label6.ForeColor = System.Drawing.Color.YellowGreen;
-            this.label6.Location = new System.Drawing.Point(167, 76);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(56, 25);
-            this.label6.TabIndex = 55;
-            this.label6.Text = "Num";
-            // 
-            // label7
-            // 
-            this.label7.AutoSize = true;
-            this.label7.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label7.ForeColor = System.Drawing.Color.Olive;
-            this.label7.Location = new System.Drawing.Point(167, 88);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(56, 25);
-            this.label7.TabIndex = 56;
-            this.label7.Text = "Num";
+            this.incomeLabel.AutoSize = true;
+            this.incomeLabel.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.incomeLabel.ForeColor = System.Drawing.Color.ForestGreen;
+            this.incomeLabel.Location = new System.Drawing.Point(117, 16);
+            this.incomeLabel.Name = "incomeLabel";
+            this.incomeLabel.Size = new System.Drawing.Size(78, 25);
+            this.incomeLabel.TabIndex = 54;
+            this.incomeLabel.Text = "Income";
             // 
             // Dashboard
             // 
@@ -472,17 +472,17 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1393, 850);
             this.Controls.Add(this.panel11);
-            this.Controls.Add(this.panel12);
+            this.Controls.Add(this.incomePanel);
             this.Controls.Add(this.panel9);
-            this.Controls.Add(this.panel10);
+            this.Controls.Add(this.bookingsPanel);
             this.Controls.Add(this.panel7);
             this.Controls.Add(this.panel8);
             this.Controls.Add(this.panel5);
-            this.Controls.Add(this.panel6);
+            this.Controls.Add(this.usersPanel);
             this.Controls.Add(this.panel3);
             this.Controls.Add(this.panel2);
-            this.Controls.Add(this.panel4);
-            this.Controls.Add(this.panel1);
+            this.Controls.Add(this.driversPanel);
+            this.Controls.Add(this.vehiclesPanel);
             this.Controls.Add(this.dashLabel);
             this.Controls.Add(this.driverLabel);
             this.Controls.Add(this.driverPicBox);
@@ -507,18 +507,18 @@
             ((System.ComponentModel.ISupportInitialize)(this.bookingPicBox)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.vehiclesPicBox)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.customerPicBox)).EndInit();
-            this.panel1.ResumeLayout(false);
-            this.panel1.PerformLayout();
-            this.panel4.ResumeLayout(false);
-            this.panel4.PerformLayout();
-            this.panel6.ResumeLayout(false);
-            this.panel6.PerformLayout();
+            this.vehiclesPanel.ResumeLayout(false);
+            this.vehiclesPanel.PerformLayout();
+            this.driversPanel.ResumeLayout(false);
+            this.driversPanel.PerformLayout();
+            this.usersPanel.ResumeLayout(false);
+            this.usersPanel.PerformLayout();
             this.panel8.ResumeLayout(false);
             this.panel8.PerformLayout();
-            this.panel10.ResumeLayout(false);
-            this.panel10.PerformLayout();
-            this.panel12.ResumeLayout(false);
-            this.panel12.PerformLayout();
+            this.bookingsPanel.ResumeLayout(false);
+            this.bookingsPanel.PerformLayout();
+            this.incomePanel.ResumeLayout(false);
+            this.incomePanel.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -540,16 +540,16 @@
         private Label customerLabel;
         private PictureBox customerPicBox;
         private Label dashLabel;
-        private Panel panel1;
+        private Panel vehiclesPanel;
         private Label label2;
         private Label labelVehicles;
         private Panel panel2;
         private Panel panel3;
-        private Panel panel4;
+        private Panel driversPanel;
         private Label label7;
         private Label labelDrivers;
         private Panel panel5;
-        private Panel panel6;
+        private Panel usersPanel;
         private Label label3;
         private Label labelUsers;
         private Panel panel7;
@@ -557,11 +557,11 @@
         private Label label6;
         private Label labelcustomers;
         private Panel panel9;
-        private Panel panel10;
+        private Panel bookingsPanel;
         private Label label4;
         private Label labelBookings;
         private Panel panel11;
-        private Panel panel12;
+        private Panel incomePanel;
         private Label label5;
         private Label incomeLabel;
     }

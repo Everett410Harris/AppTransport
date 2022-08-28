@@ -30,6 +30,7 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Customers));
             this.panel1 = new System.Windows.Forms.Panel();
+            this.customerAddressTb = new System.Windows.Forms.TextBox();
             this.customerPhoneLabel = new System.Windows.Forms.Label();
             this.customerAddressLabel = new System.Windows.Forms.Label();
             this.customerPhoneTb = new System.Windows.Forms.TextBox();
@@ -38,7 +39,7 @@
             this.manageCustomersLabel = new System.Windows.Forms.Label();
             this.driverLabel = new System.Windows.Forms.Label();
             this.driverPicBox = new System.Windows.Forms.PictureBox();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.iconPicBox = new System.Windows.Forms.PictureBox();
             this.exitLabel = new System.Windows.Forms.Label();
             this.exitPicBox = new System.Windows.Forms.PictureBox();
             this.dashboardLabel = new System.Windows.Forms.Label();
@@ -49,7 +50,6 @@
             this.vehiclesPicBox = new System.Windows.Forms.PictureBox();
             this.customerLabel = new System.Windows.Forms.Label();
             this.customerPicBox = new System.Windows.Forms.PictureBox();
-            this.customerAddressTb = new System.Windows.Forms.TextBox();
             this.customersdataGridView1 = new System.Windows.Forms.DataGridView();
             this.panel3 = new System.Windows.Forms.Panel();
             this.panel4 = new System.Windows.Forms.Panel();
@@ -59,7 +59,7 @@
             this.addNewBtn = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.driverPicBox)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.iconPicBox)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.exitPicBox)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dashboardPicBox)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.bookingPicBox)).BeginInit();
@@ -84,6 +84,14 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(1056, 233);
             this.panel1.TabIndex = 2;
+            // 
+            // customerAddressTb
+            // 
+            this.customerAddressTb.Location = new System.Drawing.Point(756, 77);
+            this.customerAddressTb.Multiline = true;
+            this.customerAddressTb.Name = "customerAddressTb";
+            this.customerAddressTb.Size = new System.Drawing.Size(199, 86);
+            this.customerAddressTb.TabIndex = 19;
             // 
             // customerPhoneLabel
             // 
@@ -165,15 +173,15 @@
             this.driverPicBox.TabIndex = 13;
             this.driverPicBox.TabStop = false;
             // 
-            // pictureBox1
+            // iconPicBox
             // 
-            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(1, 3);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(51, 49);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox1.TabIndex = 25;
-            this.pictureBox1.TabStop = false;
+            this.iconPicBox.Image = ((System.Drawing.Image)(resources.GetObject("iconPicBox.Image")));
+            this.iconPicBox.Location = new System.Drawing.Point(1, 3);
+            this.iconPicBox.Name = "iconPicBox";
+            this.iconPicBox.Size = new System.Drawing.Size(51, 49);
+            this.iconPicBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.iconPicBox.TabIndex = 25;
+            this.iconPicBox.TabStop = false;
             // 
             // exitLabel
             // 
@@ -277,14 +285,6 @@
             this.customerPicBox.TabIndex = 14;
             this.customerPicBox.TabStop = false;
             // 
-            // customerAddressTb
-            // 
-            this.customerAddressTb.Location = new System.Drawing.Point(756, 77);
-            this.customerAddressTb.Multiline = true;
-            this.customerAddressTb.Name = "customerAddressTb";
-            this.customerAddressTb.Size = new System.Drawing.Size(199, 86);
-            this.customerAddressTb.TabIndex = 19;
-            // 
             // customersdataGridView1
             // 
             this.customersdataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
@@ -372,7 +372,7 @@
             this.Controls.Add(this.customersdataGridView1);
             this.Controls.Add(this.driverLabel);
             this.Controls.Add(this.driverPicBox);
-            this.Controls.Add(this.pictureBox1);
+            this.Controls.Add(this.iconPicBox);
             this.Controls.Add(this.exitLabel);
             this.Controls.Add(this.exitPicBox);
             this.Controls.Add(this.dashboardLabel);
@@ -390,7 +390,7 @@
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.driverPicBox)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.iconPicBox)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.exitPicBox)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dashboardPicBox)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.bookingPicBox)).EndInit();
@@ -415,7 +415,7 @@
         private Label manageCustomersLabel;
         private Label driverLabel;
         private PictureBox driverPicBox;
-        private PictureBox pictureBox1;
+        private PictureBox iconPicBox;
         private Label exitLabel;
         private PictureBox exitPicBox;
         private Label dashboardLabel;

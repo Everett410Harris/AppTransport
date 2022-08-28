@@ -45,16 +45,16 @@
             this.panel1 = new System.Windows.Forms.Panel();
             this.customerCb = new System.Windows.Forms.ComboBox();
             this.VehicleCb = new System.Windows.Forms.ComboBox();
-            this.retutnDateTimePicker1 = new System.Windows.Forms.DateTimePicker();
+            this.dropOffDateTimePicker1 = new System.Windows.Forms.DateTimePicker();
             this.pickupDateTimePicker1 = new System.Windows.Forms.DateTimePicker();
-            this.userPhoneLabel = new System.Windows.Forms.Label();
+            this.customerPhoneLabel = new System.Windows.Forms.Label();
             this.driverLabel = new System.Windows.Forms.Label();
             this.driverCb = new System.Windows.Forms.ComboBox();
-            this.returnDateLabel = new System.Windows.Forms.Label();
+            this.dropOffDateLabel = new System.Windows.Forms.Label();
             this.userPhoneTb = new System.Windows.Forms.TextBox();
             this.pickupDateLabel = new System.Windows.Forms.Label();
             this.vehiclesLabel = new System.Windows.Forms.Label();
-            this.customersLabel = new System.Windows.Forms.Label();
+            this.customersNameLabel = new System.Windows.Forms.Label();
             this.bookingLabel = new System.Windows.Forms.Label();
             this.bookingdataGridView1 = new System.Windows.Forms.DataGridView();
             this.panel3 = new System.Windows.Forms.Panel();
@@ -213,16 +213,16 @@
             this.panel1.BackColor = System.Drawing.Color.PeachPuff;
             this.panel1.Controls.Add(this.customerCb);
             this.panel1.Controls.Add(this.VehicleCb);
-            this.panel1.Controls.Add(this.retutnDateTimePicker1);
+            this.panel1.Controls.Add(this.dropOffDateTimePicker1);
             this.panel1.Controls.Add(this.pickupDateTimePicker1);
-            this.panel1.Controls.Add(this.userPhoneLabel);
+            this.panel1.Controls.Add(this.customerPhoneLabel);
             this.panel1.Controls.Add(this.driverLabel);
             this.panel1.Controls.Add(this.driverCb);
-            this.panel1.Controls.Add(this.returnDateLabel);
+            this.panel1.Controls.Add(this.dropOffDateLabel);
             this.panel1.Controls.Add(this.userPhoneTb);
             this.panel1.Controls.Add(this.pickupDateLabel);
             this.panel1.Controls.Add(this.vehiclesLabel);
-            this.panel1.Controls.Add(this.customersLabel);
+            this.panel1.Controls.Add(this.customersNameLabel);
             this.panel1.Controls.Add(this.bookingLabel);
             this.panel1.Location = new System.Drawing.Point(182, 12);
             this.panel1.Name = "panel1";
@@ -242,44 +242,44 @@
             // 
             this.VehicleCb.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.VehicleCb.FormattingEnabled = true;
-            this.VehicleCb.Location = new System.Drawing.Point(263, 132);
+            this.VehicleCb.Location = new System.Drawing.Point(786, 71);
             this.VehicleCb.Name = "VehicleCb";
             this.VehicleCb.Size = new System.Drawing.Size(225, 38);
             this.VehicleCb.TabIndex = 21;
             // 
-            // retutnDateTimePicker1
+            // dropOffDateTimePicker1
             // 
-            this.retutnDateTimePicker1.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.retutnDateTimePicker1.Location = new System.Drawing.Point(744, 196);
-            this.retutnDateTimePicker1.Name = "retutnDateTimePicker1";
-            this.retutnDateTimePicker1.Size = new System.Drawing.Size(225, 23);
-            this.retutnDateTimePicker1.TabIndex = 20;
+            this.dropOffDateTimePicker1.Format = System.Windows.Forms.DateTimePickerFormat.Short;
+            this.dropOffDateTimePicker1.Location = new System.Drawing.Point(786, 193);
+            this.dropOffDateTimePicker1.Name = "dropOffDateTimePicker1";
+            this.dropOffDateTimePicker1.Size = new System.Drawing.Size(225, 23);
+            this.dropOffDateTimePicker1.TabIndex = 20;
             // 
             // pickupDateTimePicker1
             // 
             this.pickupDateTimePicker1.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.pickupDateTimePicker1.Location = new System.Drawing.Point(744, 79);
+            this.pickupDateTimePicker1.Location = new System.Drawing.Point(786, 135);
             this.pickupDateTimePicker1.Name = "pickupDateTimePicker1";
             this.pickupDateTimePicker1.Size = new System.Drawing.Size(225, 23);
             this.pickupDateTimePicker1.TabIndex = 19;
             // 
-            // userPhoneLabel
+            // customerPhoneLabel
             // 
-            this.userPhoneLabel.AutoSize = true;
-            this.userPhoneLabel.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.userPhoneLabel.ForeColor = System.Drawing.Color.DodgerBlue;
-            this.userPhoneLabel.Location = new System.Drawing.Point(108, 189);
-            this.userPhoneLabel.Name = "userPhoneLabel";
-            this.userPhoneLabel.Size = new System.Drawing.Size(125, 30);
-            this.userPhoneLabel.TabIndex = 18;
-            this.userPhoneLabel.Text = "User Phone";
+            this.customerPhoneLabel.AutoSize = true;
+            this.customerPhoneLabel.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.customerPhoneLabel.ForeColor = System.Drawing.Color.DodgerBlue;
+            this.customerPhoneLabel.Location = new System.Drawing.Point(81, 140);
+            this.customerPhoneLabel.Name = "customerPhoneLabel";
+            this.customerPhoneLabel.Size = new System.Drawing.Size(176, 30);
+            this.customerPhoneLabel.TabIndex = 18;
+            this.customerPhoneLabel.Text = "Customer Phone";
             // 
             // driverLabel
             // 
             this.driverLabel.AutoSize = true;
             this.driverLabel.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.driverLabel.ForeColor = System.Drawing.Color.DodgerBlue;
-            this.driverLabel.Location = new System.Drawing.Point(608, 135);
+            this.driverLabel.Location = new System.Drawing.Point(85, 193);
             this.driverLabel.Name = "driverLabel";
             this.driverLabel.Size = new System.Drawing.Size(72, 30);
             this.driverLabel.TabIndex = 17;
@@ -294,26 +294,26 @@
             "Female",
             "Male",
             "Other"});
-            this.driverCb.Location = new System.Drawing.Point(744, 127);
+            this.driverCb.Location = new System.Drawing.Point(263, 185);
             this.driverCb.Name = "driverCb";
             this.driverCb.Size = new System.Drawing.Size(225, 38);
             this.driverCb.TabIndex = 10;
             // 
-            // returnDateLabel
+            // dropOffDateLabel
             // 
-            this.returnDateLabel.AutoSize = true;
-            this.returnDateLabel.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.returnDateLabel.ForeColor = System.Drawing.Color.DodgerBlue;
-            this.returnDateLabel.Location = new System.Drawing.Point(609, 188);
-            this.returnDateLabel.Name = "returnDateLabel";
-            this.returnDateLabel.Size = new System.Drawing.Size(130, 30);
-            this.returnDateLabel.TabIndex = 7;
-            this.returnDateLabel.Text = "Return Date";
+            this.dropOffDateLabel.AutoSize = true;
+            this.dropOffDateLabel.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.dropOffDateLabel.ForeColor = System.Drawing.Color.DodgerBlue;
+            this.dropOffDateLabel.Location = new System.Drawing.Point(609, 188);
+            this.dropOffDateLabel.Name = "dropOffDateLabel";
+            this.dropOffDateLabel.Size = new System.Drawing.Size(151, 30);
+            this.dropOffDateLabel.TabIndex = 7;
+            this.dropOffDateLabel.Text = "Drop Off Date";
             // 
             // userPhoneTb
             // 
             this.userPhoneTb.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.userPhoneTb.Location = new System.Drawing.Point(263, 184);
+            this.userPhoneTb.Location = new System.Drawing.Point(263, 135);
             this.userPhoneTb.Name = "userPhoneTb";
             this.userPhoneTb.Size = new System.Drawing.Size(225, 35);
             this.userPhoneTb.TabIndex = 6;
@@ -323,7 +323,7 @@
             this.pickupDateLabel.AutoSize = true;
             this.pickupDateLabel.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.pickupDateLabel.ForeColor = System.Drawing.Color.DodgerBlue;
-            this.pickupDateLabel.Location = new System.Drawing.Point(609, 75);
+            this.pickupDateLabel.Location = new System.Drawing.Point(609, 131);
             this.pickupDateLabel.Name = "pickupDateLabel";
             this.pickupDateLabel.Size = new System.Drawing.Size(131, 30);
             this.pickupDateLabel.TabIndex = 5;
@@ -334,22 +334,22 @@
             this.vehiclesLabel.AutoSize = true;
             this.vehiclesLabel.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.vehiclesLabel.ForeColor = System.Drawing.Color.DodgerBlue;
-            this.vehiclesLabel.Location = new System.Drawing.Point(108, 135);
+            this.vehiclesLabel.Location = new System.Drawing.Point(604, 74);
             this.vehiclesLabel.Name = "vehiclesLabel";
             this.vehiclesLabel.Size = new System.Drawing.Size(83, 30);
             this.vehiclesLabel.TabIndex = 3;
             this.vehiclesLabel.Text = "Vehicle";
             // 
-            // customersLabel
+            // customersNameLabel
             // 
-            this.customersLabel.AutoSize = true;
-            this.customersLabel.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.customersLabel.ForeColor = System.Drawing.Color.DodgerBlue;
-            this.customersLabel.Location = new System.Drawing.Point(108, 79);
-            this.customersLabel.Name = "customersLabel";
-            this.customersLabel.Size = new System.Drawing.Size(107, 30);
-            this.customersLabel.TabIndex = 1;
-            this.customersLabel.Text = "Customer";
+            this.customersNameLabel.AutoSize = true;
+            this.customersNameLabel.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.customersNameLabel.ForeColor = System.Drawing.Color.DodgerBlue;
+            this.customersNameLabel.Location = new System.Drawing.Point(81, 79);
+            this.customersNameLabel.Name = "customersNameLabel";
+            this.customersNameLabel.Size = new System.Drawing.Size(171, 30);
+            this.customersNameLabel.TabIndex = 1;
+            this.customersNameLabel.Text = "Customer Name";
             // 
             // bookingLabel
             // 
@@ -499,16 +499,16 @@
         private Panel panel1;
         private ComboBox customerCb;
         private ComboBox VehicleCb;
-        private DateTimePicker retutnDateTimePicker1;
+        private DateTimePicker dropOffDateTimePicker1;
         private DateTimePicker pickupDateTimePicker1;
-        private Label userPhoneLabel;
+        private Label customerPhoneLabel;
         private Label driverLabel;
         private ComboBox driverCb;
-        private Label returnDateLabel;
+        private Label dropOffDateLabel;
         private TextBox userPhoneTb;
         private Label pickupDateLabel;
         private Label vehiclesLabel;
-        private Label customersLabel;
+        private Label customersNameLabel;
         private Label bookingLabel;
         private DataGridView bookingdataGridView1;
         private Panel panel3;
