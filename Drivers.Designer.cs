@@ -45,18 +45,6 @@
             this.panel1 = new System.Windows.Forms.Panel();
             this.driverDOBdateTimePicker1 = new System.Windows.Forms.DateTimePicker();
             this.driversDOBLabel = new System.Windows.Forms.Label();
-            this.makeLabel = new System.Windows.Forms.Label();
-            this.bookedLabel = new System.Windows.Forms.Label();
-            this.engineTypeLabel = new System.Windows.Forms.Label();
-            this.vehicleYearLabel = new System.Windows.Forms.Label();
-            this.comboBox5 = new System.Windows.Forms.ComboBox();
-            this.engineTypeCb = new System.Windows.Forms.ComboBox();
-            this.vehicleYearCb = new System.Windows.Forms.ComboBox();
-            this.comboBox2 = new System.Windows.Forms.ComboBox();
-            this.modelTb = new System.Windows.Forms.TextBox();
-            this.modelLabel = new System.Windows.Forms.Label();
-            this.colorTb = new System.Windows.Forms.TextBox();
-            this.colorLabel = new System.Windows.Forms.Label();
             this.driversPhoneTb = new System.Windows.Forms.TextBox();
             this.mileageLabel = new System.Windows.Forms.Label();
             this.driversNameTb = new System.Windows.Forms.TextBox();
@@ -219,18 +207,6 @@
             this.panel1.BackColor = System.Drawing.Color.PeachPuff;
             this.panel1.Controls.Add(this.driverDOBdateTimePicker1);
             this.panel1.Controls.Add(this.driversDOBLabel);
-            this.panel1.Controls.Add(this.makeLabel);
-            this.panel1.Controls.Add(this.bookedLabel);
-            this.panel1.Controls.Add(this.engineTypeLabel);
-            this.panel1.Controls.Add(this.vehicleYearLabel);
-            this.panel1.Controls.Add(this.comboBox5);
-            this.panel1.Controls.Add(this.engineTypeCb);
-            this.panel1.Controls.Add(this.vehicleYearCb);
-            this.panel1.Controls.Add(this.comboBox2);
-            this.panel1.Controls.Add(this.modelTb);
-            this.panel1.Controls.Add(this.modelLabel);
-            this.panel1.Controls.Add(this.colorTb);
-            this.panel1.Controls.Add(this.colorLabel);
             this.panel1.Controls.Add(this.driversPhoneTb);
             this.panel1.Controls.Add(this.mileageLabel);
             this.panel1.Controls.Add(this.driversNameTb);
@@ -260,124 +236,6 @@
             this.driversDOBLabel.Size = new System.Drawing.Size(136, 30);
             this.driversDOBLabel.TabIndex = 18;
             this.driversDOBLabel.Text = "Driver\'s DOB";
-            // 
-            // makeLabel
-            // 
-            this.makeLabel.AutoSize = true;
-            this.makeLabel.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.makeLabel.ForeColor = System.Drawing.Color.DodgerBlue;
-            this.makeLabel.Location = new System.Drawing.Point(387, 184);
-            this.makeLabel.Name = "makeLabel";
-            this.makeLabel.Size = new System.Drawing.Size(67, 30);
-            this.makeLabel.TabIndex = 17;
-            this.makeLabel.Text = "Make";
-            // 
-            // bookedLabel
-            // 
-            this.bookedLabel.AutoSize = true;
-            this.bookedLabel.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.bookedLabel.ForeColor = System.Drawing.Color.DodgerBlue;
-            this.bookedLabel.Location = new System.Drawing.Point(787, 184);
-            this.bookedLabel.Name = "bookedLabel";
-            this.bookedLabel.Size = new System.Drawing.Size(88, 30);
-            this.bookedLabel.TabIndex = 16;
-            this.bookedLabel.Text = "Booked";
-            // 
-            // engineTypeLabel
-            // 
-            this.engineTypeLabel.AutoSize = true;
-            this.engineTypeLabel.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.engineTypeLabel.ForeColor = System.Drawing.Color.DodgerBlue;
-            this.engineTypeLabel.Location = new System.Drawing.Point(787, 133);
-            this.engineTypeLabel.Name = "engineTypeLabel";
-            this.engineTypeLabel.Size = new System.Drawing.Size(132, 30);
-            this.engineTypeLabel.TabIndex = 15;
-            this.engineTypeLabel.Text = "Engine Type";
-            // 
-            // vehicleYearLabel
-            // 
-            this.vehicleYearLabel.AutoSize = true;
-            this.vehicleYearLabel.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.vehicleYearLabel.ForeColor = System.Drawing.Color.DodgerBlue;
-            this.vehicleYearLabel.Location = new System.Drawing.Point(787, 77);
-            this.vehicleYearLabel.Name = "vehicleYearLabel";
-            this.vehicleYearLabel.Size = new System.Drawing.Size(130, 30);
-            this.vehicleYearLabel.TabIndex = 14;
-            this.vehicleYearLabel.Text = "Vehicle Year";
-            // 
-            // comboBox5
-            // 
-            this.comboBox5.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.comboBox5.FormattingEnabled = true;
-            this.comboBox5.Location = new System.Drawing.Point(963, 181);
-            this.comboBox5.Name = "comboBox5";
-            this.comboBox5.Size = new System.Drawing.Size(140, 38);
-            this.comboBox5.TabIndex = 13;
-            // 
-            // engineTypeCb
-            // 
-            this.engineTypeCb.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.engineTypeCb.FormattingEnabled = true;
-            this.engineTypeCb.Location = new System.Drawing.Point(963, 127);
-            this.engineTypeCb.Name = "engineTypeCb";
-            this.engineTypeCb.Size = new System.Drawing.Size(140, 38);
-            this.engineTypeCb.TabIndex = 12;
-            // 
-            // vehicleYearCb
-            // 
-            this.vehicleYearCb.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.vehicleYearCb.FormattingEnabled = true;
-            this.vehicleYearCb.Location = new System.Drawing.Point(963, 69);
-            this.vehicleYearCb.Name = "vehicleYearCb";
-            this.vehicleYearCb.Size = new System.Drawing.Size(140, 38);
-            this.vehicleYearCb.TabIndex = 11;
-            // 
-            // comboBox2
-            // 
-            this.comboBox2.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.comboBox2.FormattingEnabled = true;
-            this.comboBox2.Location = new System.Drawing.Point(549, 181);
-            this.comboBox2.Name = "comboBox2";
-            this.comboBox2.Size = new System.Drawing.Size(140, 38);
-            this.comboBox2.TabIndex = 10;
-            // 
-            // modelTb
-            // 
-            this.modelTb.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.modelTb.Location = new System.Drawing.Point(549, 74);
-            this.modelTb.Name = "modelTb";
-            this.modelTb.Size = new System.Drawing.Size(140, 35);
-            this.modelTb.TabIndex = 8;
-            // 
-            // modelLabel
-            // 
-            this.modelLabel.AutoSize = true;
-            this.modelLabel.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.modelLabel.ForeColor = System.Drawing.Color.DodgerBlue;
-            this.modelLabel.Location = new System.Drawing.Point(387, 77);
-            this.modelLabel.Name = "modelLabel";
-            this.modelLabel.Size = new System.Drawing.Size(76, 30);
-            this.modelLabel.TabIndex = 7;
-            this.modelLabel.Text = "Model";
-            // 
-            // colorTb
-            // 
-            this.colorTb.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.colorTb.Location = new System.Drawing.Point(549, 127);
-            this.colorTb.Name = "colorTb";
-            this.colorTb.Size = new System.Drawing.Size(140, 35);
-            this.colorTb.TabIndex = 6;
-            // 
-            // colorLabel
-            // 
-            this.colorLabel.AutoSize = true;
-            this.colorLabel.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.colorLabel.ForeColor = System.Drawing.Color.DodgerBlue;
-            this.colorLabel.Location = new System.Drawing.Point(387, 130);
-            this.colorLabel.Name = "colorLabel";
-            this.colorLabel.Size = new System.Drawing.Size(66, 30);
-            this.colorLabel.TabIndex = 5;
-            this.colorLabel.Text = "Color";
             // 
             // driversPhoneTb
             // 
@@ -565,18 +423,6 @@
         private Panel panel1;
         private DateTimePicker driverDOBdateTimePicker1;
         private Label driversDOBLabel;
-        private Label makeLabel;
-        private Label bookedLabel;
-        private Label engineTypeLabel;
-        private Label vehicleYearLabel;
-        private ComboBox comboBox5;
-        private ComboBox engineTypeCb;
-        private ComboBox vehicleYearCb;
-        private ComboBox comboBox2;
-        private TextBox modelTb;
-        private Label modelLabel;
-        private TextBox colorTb;
-        private Label colorLabel;
         private TextBox driversPhoneTb;
         private Label mileageLabel;
         private TextBox driversNameTb;

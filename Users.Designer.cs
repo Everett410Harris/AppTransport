@@ -31,7 +31,7 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Users));
             this.panel1 = new System.Windows.Forms.Panel();
             this.joinDatedateTimePicker1 = new System.Windows.Forms.DateTimePicker();
-            this.userDOBdateTimePicker1 = new System.Windows.Forms.DateTimePicker();
+            this.userDOBDatePicker = new System.Windows.Forms.DateTimePicker();
             this.userPhoneLabel = new System.Windows.Forms.Label();
             this.genderLabel = new System.Windows.Forms.Label();
             this.genderCb = new System.Windows.Forms.ComboBox();
@@ -62,7 +62,7 @@
             // 
             this.panel1.BackColor = System.Drawing.Color.PeachPuff;
             this.panel1.Controls.Add(this.joinDatedateTimePicker1);
-            this.panel1.Controls.Add(this.userDOBdateTimePicker1);
+            this.panel1.Controls.Add(this.userDOBDatePicker);
             this.panel1.Controls.Add(this.userPhoneLabel);
             this.panel1.Controls.Add(this.genderLabel);
             this.panel1.Controls.Add(this.genderCb);
@@ -87,13 +87,13 @@
             this.joinDatedateTimePicker1.Size = new System.Drawing.Size(225, 23);
             this.joinDatedateTimePicker1.TabIndex = 20;
             // 
-            // userDOBdateTimePicker1
+            // userDOBDatePicker
             // 
-            this.userDOBdateTimePicker1.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.userDOBdateTimePicker1.Location = new System.Drawing.Point(744, 79);
-            this.userDOBdateTimePicker1.Name = "userDOBdateTimePicker1";
-            this.userDOBdateTimePicker1.Size = new System.Drawing.Size(225, 23);
-            this.userDOBdateTimePicker1.TabIndex = 19;
+            this.userDOBDatePicker.Format = System.Windows.Forms.DateTimePickerFormat.Short;
+            this.userDOBDatePicker.Location = new System.Drawing.Point(744, 79);
+            this.userDOBDatePicker.Name = "userDOBDatePicker";
+            this.userDOBDatePicker.Size = new System.Drawing.Size(225, 23);
+            this.userDOBDatePicker.TabIndex = 19;
             // 
             // userPhoneLabel
             // 
@@ -324,7 +324,7 @@
 
         private Panel panel1;
         private DateTimePicker joinDatedateTimePicker1;
-        private DateTimePicker userDOBdateTimePicker1;
+        private DateTimePicker userDOBDatePicker;
         private Label userPhoneLabel;
         private Label genderLabel;
         private ComboBox genderCb;
