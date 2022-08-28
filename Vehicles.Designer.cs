@@ -168,6 +168,10 @@
             // 
             this.comboBox5.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.comboBox5.FormattingEnabled = true;
+            this.comboBox5.Items.AddRange(new object[] {
+            "",
+            "Yes",
+            "No"});
             this.comboBox5.Location = new System.Drawing.Point(963, 181);
             this.comboBox5.Name = "comboBox5";
             this.comboBox5.Size = new System.Drawing.Size(140, 38);
@@ -177,6 +181,11 @@
             // 
             this.engineTypeCb.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.engineTypeCb.FormattingEnabled = true;
+            this.engineTypeCb.Items.AddRange(new object[] {
+            "",
+            "Electric",
+            "Gasoline",
+            "Diesel"});
             this.engineTypeCb.Location = new System.Drawing.Point(963, 127);
             this.engineTypeCb.Name = "engineTypeCb";
             this.engineTypeCb.Size = new System.Drawing.Size(140, 38);
@@ -186,6 +195,21 @@
             // 
             this.vehicleYearCb.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.vehicleYearCb.FormattingEnabled = true;
+            this.vehicleYearCb.Items.AddRange(new object[] {
+            "",
+            "2022",
+            "2021",
+            "2020",
+            "2019",
+            "2018",
+            "2017",
+            "2016",
+            "2015",
+            "2014",
+            "2013",
+            "2012",
+            "2011",
+            "2010"});
             this.vehicleYearCb.Location = new System.Drawing.Point(963, 69);
             this.vehicleYearCb.Name = "vehicleYearCb";
             this.vehicleYearCb.Size = new System.Drawing.Size(140, 38);
@@ -195,6 +219,15 @@
             // 
             this.comboBox2.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.comboBox2.FormattingEnabled = true;
+            this.comboBox2.Items.AddRange(new object[] {
+            "",
+            "Tesla",
+            "BMW",
+            "Mercedes",
+            "Toyota",
+            "Audi",
+            "Nissan",
+            "Chevrolet"});
             this.comboBox2.Location = new System.Drawing.Point(549, 181);
             this.comboBox2.Name = "comboBox2";
             this.comboBox2.Size = new System.Drawing.Size(140, 38);
@@ -204,6 +237,15 @@
             // 
             this.comboBox1.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.comboBox1.FormattingEnabled = true;
+            this.comboBox1.Items.AddRange(new object[] {
+            "",
+            "",
+            "Frieght",
+            "Sprinter",
+            "Cargo Van",
+            "Truck",
+            "SUV",
+            "Sedan"});
             this.comboBox1.Location = new System.Drawing.Point(175, 181);
             this.comboBox1.Name = "comboBox1";
             this.comboBox1.Size = new System.Drawing.Size(140, 38);
