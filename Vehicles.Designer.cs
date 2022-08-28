@@ -572,6 +572,7 @@
             this.Name = "Vehicle";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Vehicles";
+            this.Load += new System.EventHandler(this.Vehicle_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.customerPicBox)).EndInit();
