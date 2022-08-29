@@ -1,6 +1,7 @@
 using MySql.Data.MySqlClient;
 using System.Data;
 using System.Linq.Expressions;
+using System.Windows.Forms;
 
 namespace AppTransport
 {
@@ -143,9 +144,21 @@ namespace AppTransport
 
         private void displayBtn_Click(object sender, EventArgs e)
         {
-            sqlConn.Open();
-            string sqlQuery = "select * from transportationapp.vehicles";
             
+            
+           // ability to search using search tb and display that info only
+                try
+                {
+                    DataView dv = sqlDt.DefaultView;
+                    dv.RowFilter = String.Format("license_plate like '%{0}%'", licensePlateTb.Text);
+                    vehicledataGridView1.DataSource = dv.ToTable();
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show(ex.Message);
+                }
+            
+
         }
     }
 }
