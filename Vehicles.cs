@@ -140,5 +140,12 @@ namespace AppTransport
                 MessageBox.Show(ex.Message);
             }
         }
+
+        private void displayBtn_Click(object sender, EventArgs e)
+        {
+            sqlConn.Open();
+            string sqlQuery = "select * from transportationapp.vehicles";
+            
+        }
     }
 }

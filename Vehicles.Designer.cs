@@ -517,6 +517,7 @@
             this.displayBtn.TabIndex = 1;
             this.displayBtn.Text = "Display";
             this.displayBtn.UseVisualStyleBackColor = false;
+            this.displayBtn.Click += new System.EventHandler(this.displayBtn_Click);
             // 
             // addNewBtn
             // 
