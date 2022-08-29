@@ -35,11 +35,11 @@
             this.bookedLabel = new System.Windows.Forms.Label();
             this.engineTypeLabel = new System.Windows.Forms.Label();
             this.vehicleYearLabel = new System.Windows.Forms.Label();
-            this.comboBox5 = new System.Windows.Forms.ComboBox();
+            this.bookedCb = new System.Windows.Forms.ComboBox();
             this.engineTypeCb = new System.Windows.Forms.ComboBox();
             this.vehicleYearCb = new System.Windows.Forms.ComboBox();
-            this.comboBox2 = new System.Windows.Forms.ComboBox();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.makeCb = new System.Windows.Forms.ComboBox();
+            this.typeCb = new System.Windows.Forms.ComboBox();
             this.modelTb = new System.Windows.Forms.TextBox();
             this.modelLabel = new System.Windows.Forms.Label();
             this.colorTb = new System.Windows.Forms.TextBox();
@@ -90,11 +90,11 @@
             this.panel1.Controls.Add(this.bookedLabel);
             this.panel1.Controls.Add(this.engineTypeLabel);
             this.panel1.Controls.Add(this.vehicleYearLabel);
-            this.panel1.Controls.Add(this.comboBox5);
+            this.panel1.Controls.Add(this.bookedCb);
             this.panel1.Controls.Add(this.engineTypeCb);
             this.panel1.Controls.Add(this.vehicleYearCb);
-            this.panel1.Controls.Add(this.comboBox2);
-            this.panel1.Controls.Add(this.comboBox1);
+            this.panel1.Controls.Add(this.makeCb);
+            this.panel1.Controls.Add(this.typeCb);
             this.panel1.Controls.Add(this.modelTb);
             this.panel1.Controls.Add(this.modelLabel);
             this.panel1.Controls.Add(this.colorTb);
@@ -164,18 +164,18 @@
             this.vehicleYearLabel.TabIndex = 14;
             this.vehicleYearLabel.Text = "Vehicle Year";
             // 
-            // comboBox5
+            // bookedCb
             // 
-            this.comboBox5.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.comboBox5.FormattingEnabled = true;
-            this.comboBox5.Items.AddRange(new object[] {
+            this.bookedCb.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.bookedCb.FormattingEnabled = true;
+            this.bookedCb.Items.AddRange(new object[] {
             "",
             "Yes",
             "No"});
-            this.comboBox5.Location = new System.Drawing.Point(963, 181);
-            this.comboBox5.Name = "comboBox5";
-            this.comboBox5.Size = new System.Drawing.Size(140, 38);
-            this.comboBox5.TabIndex = 13;
+            this.bookedCb.Location = new System.Drawing.Point(963, 181);
+            this.bookedCb.Name = "bookedCb";
+            this.bookedCb.Size = new System.Drawing.Size(140, 38);
+            this.bookedCb.TabIndex = 13;
             // 
             // engineTypeCb
             // 
@@ -215,11 +215,11 @@
             this.vehicleYearCb.Size = new System.Drawing.Size(140, 38);
             this.vehicleYearCb.TabIndex = 11;
             // 
-            // comboBox2
+            // makeCb
             // 
-            this.comboBox2.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.comboBox2.FormattingEnabled = true;
-            this.comboBox2.Items.AddRange(new object[] {
+            this.makeCb.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.makeCb.FormattingEnabled = true;
+            this.makeCb.Items.AddRange(new object[] {
             "",
             "Tesla",
             "BMW",
@@ -228,16 +228,16 @@
             "Audi",
             "Nissan",
             "Chevrolet"});
-            this.comboBox2.Location = new System.Drawing.Point(549, 181);
-            this.comboBox2.Name = "comboBox2";
-            this.comboBox2.Size = new System.Drawing.Size(140, 38);
-            this.comboBox2.TabIndex = 10;
+            this.makeCb.Location = new System.Drawing.Point(549, 181);
+            this.makeCb.Name = "makeCb";
+            this.makeCb.Size = new System.Drawing.Size(140, 38);
+            this.makeCb.TabIndex = 10;
             // 
-            // comboBox1
+            // typeCb
             // 
-            this.comboBox1.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Items.AddRange(new object[] {
+            this.typeCb.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.typeCb.FormattingEnabled = true;
+            this.typeCb.Items.AddRange(new object[] {
             "",
             "",
             "Frieght",
@@ -246,10 +246,10 @@
             "Truck",
             "SUV",
             "Sedan"});
-            this.comboBox1.Location = new System.Drawing.Point(175, 181);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(140, 38);
-            this.comboBox1.TabIndex = 9;
+            this.typeCb.Location = new System.Drawing.Point(175, 181);
+            this.typeCb.Name = "typeCb";
+            this.typeCb.Size = new System.Drawing.Size(140, 38);
+            this.typeCb.TabIndex = 9;
             // 
             // modelTb
             // 
@@ -458,6 +458,7 @@
             this.vehicledataGridView1.RowTemplate.Height = 25;
             this.vehicledataGridView1.Size = new System.Drawing.Size(1115, 458);
             this.vehicledataGridView1.TabIndex = 13;
+            this.vehicledataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.vehicledataGridView1_CellContentClick);
             // 
             // panel3
             // 
@@ -491,6 +492,7 @@
             this.resetBtn.TabIndex = 4;
             this.resetBtn.Text = "Reset";
             this.resetBtn.UseVisualStyleBackColor = false;
+            this.resetBtn.Click += new System.EventHandler(this.resetBtn_Click);
             // 
             // deleteBtn
             // 
@@ -527,6 +529,7 @@
             this.addNewBtn.TabIndex = 0;
             this.addNewBtn.Text = "Add New";
             this.addNewBtn.UseVisualStyleBackColor = false;
+            this.addNewBtn.Click += new System.EventHandler(this.addNewBtn_Click);
             // 
             // driverLabel
             // 
@@ -599,11 +602,11 @@
         private Label bookedLabel;
         private Label engineTypeLabel;
         private Label vehicleYearLabel;
-        private ComboBox comboBox5;
+        private ComboBox bookedCb;
         private ComboBox engineTypeCb;
         private ComboBox vehicleYearCb;
-        private ComboBox comboBox2;
-        private ComboBox comboBox1;
+        private ComboBox makeCb;
+        private ComboBox typeCb;
         private TextBox modelTb;
         private Label modelLabel;
         private TextBox colorTb;
