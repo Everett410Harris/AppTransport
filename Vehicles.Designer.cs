@@ -438,6 +438,7 @@
             this.exitPicBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.exitPicBox.TabIndex = 10;
             this.exitPicBox.TabStop = false;
+            this.exitPicBox.Click += new System.EventHandler(this.exitPicBox_Click);
             // 
             // iconPicBox
             // 
