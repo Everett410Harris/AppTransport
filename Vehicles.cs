@@ -102,7 +102,7 @@ namespace AppTransport
                     + "database =" + database;
 
                 sqlConn.Open();
-                sqlQuery = "insert into transportationapp.vehicles(license_plate,make,model,year,engine,color.mileage,type,booked)" +
+                sqlQuery = "insert into transportationapp.vehicles(license_plate,make,model,year,engine,color,mileage,type,booked)" +
                     "values('" + licensePlateTb.Text + "', '" + makeCb.Text + "', '" + modelTb.Text + "', '" + vehicleYearCb.Text + "', '" + engineTypeCb.Text + "', " +
                     "'" + colorTb.Text + "', '" + mileageTb.Text + "', '" + typeCb.Text + "', '" + bookedCb.Text + "')";
 
